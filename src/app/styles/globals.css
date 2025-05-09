@@ -15,7 +15,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #cdd6f4;
   }
 }
 
@@ -23,4 +23,15 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+  cursor:none;
+}
+.customCursor{
+  background-color:transparent;
+  box-shadow:0 0 100px 100px rgb(205, 214, 244,0.2);
+  height:1px;
+  width:1px;
+  border-radius:50%;
 }
