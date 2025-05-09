@@ -14,24 +14,35 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #11111b;
+    --bg: #11111b;
+    --bg2: #1e1e2e;
     --foreground: #cdd6f4;
+    --fg: #cdd6f4;
   }
 }
 
 body {
-  background: var(--background);
+  /* background-image: linear-gradient(179deg,rgba(30, 30, 46, 1) 0%, rgba(24, 24, 37, 1) 50%, rgba(17, 17, 27, 1) 100%); */
+  background-image:linear-gradient(120deg,var(--bg2) 10%,var(--bg) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  min-height:100vh;
 }
 
-*{
-  cursor:none;
-}
 .customCursor{
   background-color:transparent;
   box-shadow:0 0 100px 100px rgb(205, 214, 244,0.2);
   height:1px;
   width:1px;
   border-radius:50%;
+}
+main{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
 }

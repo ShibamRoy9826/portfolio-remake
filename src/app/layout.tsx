@@ -24,6 +24,9 @@ export default function RootLayout({
         className={inconsolata.className}
       >
         <NavBar/>
+        {/* <div className="z-[100] flex items-center justify-center w-full h-full">
+        <Loader/>
+        </div> */}
         <CustomCursor/>
         {children}
         

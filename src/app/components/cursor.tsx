@@ -1,6 +1,7 @@
 "use client"
 import {useEffect} from 'react';
 import {motion,useMotionValue,useTransform} from 'framer-motion';
+import style from "../styles/components.module.css";
 
 const CustomCursor=()=>{
     const pos={
@@ -25,6 +26,7 @@ const CustomCursor=()=>{
     },[]);
 
     return (
+        <>
         <motion.div
         className="customCursor"
         style={{
@@ -33,6 +35,7 @@ const CustomCursor=()=>{
           }}>
 
         </motion.div>
+        </>
     );
 };
 export default CustomCursor;
