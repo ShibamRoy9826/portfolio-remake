@@ -19,8 +19,19 @@
     background-image:linear-gradient(90deg,rgba(205, 214, 244, 1) 0%, rgba(147, 153, 178, 1) 50%, rgba(108, 112, 134, 1) 100%); 
     color: transparent;
     background-clip: text;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
 }
 
+
+.tabNames:hover{
+    background-color:var(--fg);
+    color: var(--fg);
+    background-clip: text;
+}
 .switchContainer{
     position: absolute;
     right:6rem;

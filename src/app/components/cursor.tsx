@@ -1,7 +1,6 @@
 "use client"
 import {useEffect} from 'react';
 import {motion,useMotionValue,useTransform} from 'framer-motion';
-import style from "../styles/components.module.css";
 
 const CustomCursor=()=>{
     const pos={

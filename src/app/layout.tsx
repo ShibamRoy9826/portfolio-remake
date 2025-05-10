@@ -3,7 +3,7 @@ import { Inconsolata } from "next/font/google";
 import "./styles/globals.css";
 import NavBar from "../app/components/navbar";
 import CustomCursor from "../app/components/cursor";
-
+import Overlay from "../app/components/overlay";
 const inconsolata=Inconsolata({
   subsets:["latin"],
 })
@@ -23,11 +23,10 @@ export default function RootLayout({
       <body
         className={inconsolata.className}
       >
+        <Overlay/>
         <NavBar/>
-        {/* <div className="z-[100] flex items-center justify-center w-full h-full">
-        <Loader/>
-        </div> */}
         <CustomCursor/>
+
         {children}
         
       </body>
