@@ -1,9 +1,14 @@
 "use client"
-import {useEffect} from 'react';
-import {motion,useMotionValue,useTransform} from 'framer-motion';
+import {useCallback,useEffect} from 'react';
+import {motion,useMotionValue,useTransform,MotionValue} from 'framer-motion';
+
+interface CursorPos {
+  x:MotionValue<number>;
+  y:MotionValue<number>;
+}
 
 const CustomCursor=()=>{
-    const pos={
+    const pos:CursorPos={
         x:useMotionValue(0),
         y:useMotionValue(0)
     };
@@ -11,11 +16,14 @@ const CustomCursor=()=>{
         left: useTransform(pos.x, (val) => val - 8),
         top: useTransform(pos.y, (val) => val - 8),
       };
-    const moveCursor=(event)=>{
+    const moveCursor=useCallback(
+      (event:MouseEvent)=>{
         const {clientX,clientY}=event;
         pos.x.set(clientX);
         pos.y.set(clientY);
-    };
+      },
+      [pos.x,pos.y]
+    );
 
     useEffect(()=>{
         window.addEventListener("mousemove",moveCursor);
@@ -27,10 +35,9 @@ const CustomCursor=()=>{
     return (
         <>
         <motion.div
-        className="customCursor"
+        className="customCursor pointer-events-none fixed"
         style={{
             ...cursorStyle,
-            position: 'fixed', 
           }}>
 
         </motion.div>
