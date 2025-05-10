@@ -33,9 +33,14 @@ function NavBar(){
                   initial={false} 
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1, type:"spring"}}
+                  whileHover={{
+                    scale:1.1,
+                    backgroundColor:"var(--primary-light)",
+                    boxShadow:"0 15px 30px 10px var(--primary-shadow)"
+                  }}
                   exit={{ opacity: 0 }}
                 >
-                  <p style={{color:"#11111b"}} className={compoStyle.tabNames}>{item.name}</p>
+                  <p style={{color:"var(--bg)"}} className={compoStyle.tabNames}>{item.name}</p>
                   </motion.div>
               )}
             </Link></li>

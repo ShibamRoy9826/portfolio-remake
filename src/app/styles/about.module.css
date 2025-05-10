@@ -1,0 +1,45 @@
+.aboutContainer{
+    border-radius:1rem;
+    z-index: 1 !important;
+}
+
+.aboutContentContainer{
+    position: absolute;
+    background-color: var(--bg3);
+    z-index: 3 !important;
+}
+
+.aboutContentContainer p{
+    background-color: inherit;
+    z-index: 3 !important;
+    color:var(--fg2);
+}
+
+.borderContainer{
+    position: absolute;
+    z-index: 2 ;
+}
+
+
+.github{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    width:auto;
+    border-radius:1rem;
+    background-color:var(--primary);
+    padding-left:1rem;
+    padding-right:1rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    transition: all 0.6s ease-in-out;
+    box-shadow: 0 0 30px 10px #00000088;
+}
+
+.github:hover{
+    background-color: var(--primary-light);
+    box-shadow:0 15px 30px 10px #ae6dff44;
+    transform: scale(1.1);
+}
+
