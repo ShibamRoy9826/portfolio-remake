@@ -43,3 +43,11 @@
     transform: scale(1.1);
 }
 
+.rotatingBorder{
+    height:40vh;
+    width:50vw;
+    background-image:linear-gradient(120deg,var(--bg2) 10%,var(--bg) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+

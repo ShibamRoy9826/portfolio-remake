@@ -1,0 +1,16 @@
+{
+    "langs":{
+        "python":{
+            "id":1,
+            "img":"/lang/python.png",
+            "title":"Python",
+            "progress":90
+        },
+        "cpp":{
+            "id":2,
+            "img":"/lang/cpp.png",
+            "title":"C++",
+            "progress":40
+        }
+    }
+}
