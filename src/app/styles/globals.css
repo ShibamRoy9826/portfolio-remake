@@ -28,6 +28,18 @@
     --primary-light:#d3afff;
   }
 }
+/* *{
+  cursor:none;
+} */
+::-moz-selection { /* Code for Firefox */
+  color: var(--fg);
+  background: var(--bg3);
+}
+
+::selection {
+  color: var(--fg);
+  background: var(--bg3);
+}
 
 body {
   /* background-image: linear-gradient(179deg,rgba(30, 30, 46, 1) 0%, rgba(24, 24, 37, 1) 50%, rgba(17, 17, 27, 1) 100%); */
@@ -39,6 +51,11 @@ body {
   min-height:100vh;
 }
 
+.no-select {
+  -webkit-user-select: none; 
+  -ms-user-select: none;
+  user-select: none; 
+}
 .customCursor{
   background-color:transparent;
   box-shadow:0 0 100px 100px rgb(205, 214, 244,0.2);
@@ -70,4 +87,4 @@ body {
 
 .shadowBox{
   box-shadow: 10px 0 30px 10px #00000055;
-}
+} 

@@ -32,7 +32,7 @@
     color: var(--fg);
     background-clip: text;
 }
-.switchContainer{
+.darkModeContainer{
     position: absolute;
     right:6rem;
     display: flex;
@@ -41,12 +41,21 @@
     flex-direction: row;
 }
 
+.musicSwitchContainer{
+    position: absolute;
+    left:6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: auto;
+}
+
 .switchInnerBox{
-    width: 70px;
-    height: 35px;
+    width: 4.5rem;
+    height: 2.2rem;
     background-color: #1e1e2e;
     border-radius: 50px;
-    cursor: pointer;
     display: flex;
     padding-left: 10px;
     padding-right: 10px;

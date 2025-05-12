@@ -20,11 +20,11 @@ const MovingButton: React.FC<Props>=({svg,className,innerText,url,sameTab})=>{
     }
   }
     return (
-      <motion.div className="flex flex-row items-center justify-center mx-20 my-16 cursor-pointer" animate={{y:[0,-10,0]}} transition={{duration:3,repeat:Infinity}}>
-        <div className={className} onClick={openTab}>
+      <motion.div className="flex flex-row items-center justify-center mx-20 my-16 cursor-pointer linkCursor" animate={{y:[0,-10,0]}} transition={{duration:3,repeat:Infinity}}>
+        <button className={`${className} linkCursor`} onClick={openTab}>
             {svg}
-          <span className="text-2xl ml-4 text-[var(--bg)]" >{innerText}</span>
-        </div>
+          <span className="text-2xl ml-4 text-[var(--bg)] linkCursor no-select" >{innerText}</span>
+        </button>
       </motion.div>
 
     );

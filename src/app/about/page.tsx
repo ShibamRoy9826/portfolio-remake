@@ -19,7 +19,7 @@ function About() {
           width={300}
           height={400}
           innerStuff={
-            <Image src="/test.jpeg" alt="My pfp" style={{ borderRadius: "1rem" }} fill />
+            <Image src="/mypfp.png" alt="My pfp" style={{ borderRadius: "1rem" }} fill />
           }
           className="shadowBox"
           
@@ -45,7 +45,7 @@ function About() {
           innerStuff={
             <RotatingBorder
               innerStuff={
-                <p className="text-xl w-[90%] text-[var(--fg2)]">
+                <p className="text-[1.4rem] w-[90%] text-[var(--fg2)] textSmallCursor">
                   Hi! I am Shibam, an {currYear - 2007} year old data science enthusiast, I also have some interest in web development.
                   <br />
                   Besides programming, I like to live a normal life, having fun with family, listening to music and occasionally watching Anime. <br />

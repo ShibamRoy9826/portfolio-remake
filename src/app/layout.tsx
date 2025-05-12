@@ -26,6 +26,9 @@ export default function RootLayout({
       >
         <NavBar/>
         <CustomCursor/>
+
+        {/* <audio controls src="/music/lofi1.mp3">
+      </audio> */}
         <main className="flex flex-row items-start justify-start w-full h-full">
           <Progress/>
         {children}
