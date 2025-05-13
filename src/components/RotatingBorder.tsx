@@ -1,6 +1,6 @@
 "use client"
 
-import style from "../styles/about.module.css";
+import style from "@/styles/about.module.css";
 import {motion,useMotionValue,useTransform,animate} from "framer-motion";
 import React ,{useEffect} from "react";
 

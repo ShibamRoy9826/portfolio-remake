@@ -1,4 +1,4 @@
-import ProgressBar from "../components/progressBar";
+import ProgressBar from "../../components/progressBar";
 import Image from "next/image";
 // import {useEffect, useState} from "react";
 

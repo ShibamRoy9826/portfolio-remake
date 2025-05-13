@@ -1,5 +1,5 @@
 "use client"
-import style from "../styles/skills.module.css";
+import style from "@/styles/skills.module.css";
 import {motion} from "framer-motion";
 import React from "react";
 

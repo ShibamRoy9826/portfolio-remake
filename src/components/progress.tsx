@@ -1,5 +1,5 @@
 "use client"
-import style from "../styles/components.module.css";
+import style from "@/styles/components.module.css";
 import {motion} from "framer-motion";
 import {usePathname} from 'next/navigation';
 import React, {useState,useEffect} from "react";

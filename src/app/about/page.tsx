@@ -1,9 +1,9 @@
 "use client"
 import Image from "next/image";
-import Component3D from "../components/3DComponent";
-import MovingButton from "../components/movingButton";
-import RotatingBorder from "../components/RotatingBorder";
-import style from "../styles/about.module.css";
+import Component3D from "../../components/3DComponent";
+import MovingButton from "../../components/movingButton";
+import RotatingBorder from "../../components/RotatingBorder";
+import style from "@/styles/about.module.css";
 
 
 function About() {

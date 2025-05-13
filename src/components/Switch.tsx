@@ -2,7 +2,7 @@
 
 import * as motion from "motion/react-client";
 import React, { useState ,useEffect} from "react";
-import style from "../styles/components.module.css";
+import style from "@/styles/components.module.css";
 
 interface Props{
     svg:React.ReactNode;

@@ -4,7 +4,9 @@ import Link from "next/link";
 import Switch from "./Switch";
 import {motion} from 'framer-motion';
 import {usePathname} from 'next/navigation';
-import compoStyle from '../styles/components.module.css';
+import compoStyle from '@/styles/components.module.css';
+import { useMusicContext } from "@/contexts/musicContext";
+import {useRef,useEffect} from "react";
 
 const navItems = [
   { name: 'Home', path: '/' ,id:1},
@@ -13,6 +15,7 @@ const navItems = [
   { name: 'Projects', path: '/projects',id:4 },
   { name: 'Acheivements', path: '/acheivements',id:5 },
 ];
+
 const handleDarkMode=()=>{
   console.log("Yo! the user wants dark mode");
 }
@@ -20,14 +23,45 @@ const handleLightMode=()=>{
   console.log("shifting to light mode...");
 }
 
-const playMusic=()=>{
-  console.log("The user is in the mood to listen music");
-}
-const stopMusic=()=>{
-  console.log("The user doesn't wannt listen to music anymore...");
-}
 
 function NavBar(){
+  const audioRef=useRef<HTMLAudioElement|null>(null);
+
+// music Context stuff
+    const { musicState, updateState} = useMusicContext();
+
+  useEffect(()=>{
+    if(typeof window !== 'undefined' && !audioRef.current){
+      audioRef.current=new Audio("/music/lofi1.mp3");
+      audioRef.current.loop=true;
+    }
+    return ()=>{
+      if(audioRef.current)
+        audioRef.current.pause();
+        audioRef.current=null;
+    }
+  },[]);
+
+  useEffect(()=>{
+    if(musicState=="play" && audioRef.current){
+      audioRef.current.play();
+    }else if(audioRef.current){
+      audioRef.current.pause();
+    }
+  },[musicState])
+
+// Functions 
+    const playMusic=()=>{
+      updateState("play")
+      console.log("the current music state: ", musicState);
+    }
+
+    const stopMusic=()=>{
+      updateState("stop")
+      console.log("the current music state: ", musicState);
+    }
+
+
     const pathName=usePathname();
 
     return(

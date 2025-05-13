@@ -1,6 +1,6 @@
 // import Image from "next/image";
-import MovingButton from "./components/movingButton";
-import style from "./styles/components.module.css";
+import MovingButton from "../components/movingButton";
+import style from "@/styles/components.module.css";
 
 export default function Home() {
   return (
