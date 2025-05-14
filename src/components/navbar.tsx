@@ -24,6 +24,8 @@ const handleLightMode=()=>{
 }
 
 
+const musicList=["/music/lofi1.mp3","/music/lofi2.mp3","/music/lofi3.mp3"];
+
 function NavBar(){
   const audioRef=useRef<HTMLAudioElement|null>(null);
 
@@ -32,7 +34,10 @@ function NavBar(){
 
   useEffect(()=>{
     if(typeof window !== 'undefined' && !audioRef.current){
-      audioRef.current=new Audio("/music/lofi1.mp3");
+
+      const randomIndex = Math.floor(Math.random() * musicList.length);
+      console.log("The music to be played is: ",musicList[randomIndex]);
+      audioRef.current=new Audio(musicList[randomIndex]);
       audioRef.current.loop=true;
     }
     return ()=>{

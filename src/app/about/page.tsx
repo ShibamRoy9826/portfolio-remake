@@ -14,7 +14,7 @@ function About() {
     <section className="flex flex-row items-center justify-center w-[100vw] h-full">
 
       {/* Left side */}
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center mt-24">
         <Component3D
           width={300}
           height={400}

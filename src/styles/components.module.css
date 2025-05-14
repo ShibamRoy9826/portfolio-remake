@@ -135,7 +135,7 @@
 }
 
 .audioViz{
-    position: absolute;
+    position: fixed;
     left:0;
     bottom:0;
     width:50vw;
@@ -146,7 +146,7 @@
 }
 
 .audioViz2{
-    position: absolute;
+    position: fixed;
     right:0;
     bottom:0;
     width:50vw;
@@ -160,6 +160,29 @@
     margin: 0.5rem;
     width:2rem;
     background-color: var(--primary-light);
-    box-shadow:0 15px 30px 10px #ae6dff44;
+    box-shadow:0 0 30px 10px #ae6dff44;
     z-index: 1000;
+}
+
+.button{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    width:auto;
+    border-radius:0.5rem;
+    background-color:var(--primary);
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+    padding-left:0.8rem;
+    padding-right:0.8rem;
+    transition: all 0.3s ease-in-out;
+    margin-top:1rem;
+    margin-left:1rem;
+    margin-right: 1rem;
+}
+.button:hover{
+    transform:scale(1.1);
+    background-color: var(--primary-light);
+    box-shadow:0 0 30px 10px #ae6dff44;
 }
