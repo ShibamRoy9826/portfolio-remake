@@ -28,7 +28,7 @@ function NavBar(){
   const audioRef=useRef<HTMLAudioElement|null>(null);
 
 // music Context stuff
-    const { musicState, updateState} = useMusicContext();
+    const { musicData, updateState} = useMusicContext();
 
   useEffect(()=>{
     if(typeof window !== 'undefined' && !audioRef.current){
@@ -43,22 +43,22 @@ function NavBar(){
   },[]);
 
   useEffect(()=>{
-    if(musicState=="play" && audioRef.current){
+    if(musicData.musicState=="play" && audioRef.current){
       audioRef.current.play();
     }else if(audioRef.current){
       audioRef.current.pause();
     }
-  },[musicState])
+  },[musicData.musicState])
 
 // Functions 
     const playMusic=()=>{
-      updateState("play")
-      console.log("the current music state: ", musicState);
+      updateState({audio:audioRef.current,musicState:"play"})
+      console.log("the current music state: ", musicData.musicState);
     }
 
     const stopMusic=()=>{
-      updateState("stop")
-      console.log("the current music state: ", musicState);
+      updateState({audio:audioRef.current,musicState:"stop"})
+      console.log("the current music state: ", musicData.musicState);
     }
 
 

@@ -5,6 +5,7 @@ import NavBar from "@/components/navbar";
 import CustomCursor from "@/components/cursor";
 import Progress from "@/components/progress";
 import {MusicContextProvider} from "@/contexts/musicContext";
+import AudioViz from "@/components/AudioViz";
 
 const inconsolata=Inconsolata({
   subsets:["latin"],
@@ -20,6 +21,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <body
@@ -27,6 +29,7 @@ export default function RootLayout({
       >
         <MusicContextProvider>
 
+          <AudioViz/>
         <NavBar/>
         <CustomCursor/>
 
