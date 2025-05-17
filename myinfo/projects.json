@@ -1,0 +1,88 @@
+[
+    {
+        "id":1,
+        "name":"EasyFeh",
+        "desc":"A wallpaper engine wrapper for linux",
+        "repo":"https://github.com/ShibamRoy9826/easyfeh",
+        "demo":"https://cloud-3q71ag430-hack-club-bot.vercel.app/0easyfeh.mp4",
+        "imgSrc":"/projects/easyfeh.png"
+    },
+
+    {
+        "id":2,
+        "name":"TweakTube",
+        "desc":"Helps you to customize youtube",
+        "repo":"https://github.com/ShibamRoy9826/tweaktube",
+        "demo":"https://chromewebstore.google.com/detail/ffcagalbokfdgenaiphoednjmjnjjflj?utm_source=item-share-cb",
+        "imgSrc":"/projects/tweaktube.png"
+    },
+
+    {
+        "id":3,
+        "name":"QT_Tile",
+        "desc":"A beautiful Qtile rice with installer(for arch)",
+        "repo":"https://github.com/ShibamRoy9826/qt_tile",
+        "demo":"https://cloud-7t3z6wj50-hack-club-bot.vercel.app/0inshot_20241216_102136759.mp4",
+        "imgSrc":"/projects/qt_tile.png"
+    },
+
+    {
+        "id":4,
+        "name":"Remime",
+        "desc":"A TUI clock made with Textual",
+        "repo":"https://github.com/ShibamRoy9826/remime",
+        "demo":"https://cloud-7t3z6wj50-hack-club-bot.vercel.app/0inshot_20241216_102136759.mp4",
+        "imgSrc":"/projects/remime.png"
+    },
+    {
+        "id":5,
+        "name":"RoyBoard",
+        "desc":"A keyboard entirely that I made from scratch!",
+        "repo":"https://github.com/ShibamRoy9826/royboard",
+        "demo":"https://github.com/ShibamRoy9826/royboard",
+        "imgSrc":"/test.jpeg"
+    },
+    {
+        "id":6,
+        "name":"RoyTyper",
+        "desc":"A macropad made from scratch",
+        "repo":"https://github.com/ShibamRoy9826/roytyper",
+        "demo":"https://github.com/ShibamRoy9826/hackpad/tree/main/hackpads/RoyTyper/screenshots",
+        "imgSrc":"/projects/royTyper.jpeg"
+    },
+    {
+        "id":7,
+        "name":"EcoSight",
+        "desc":"A website to make you aware about your contribution to pollution[Hackathon project]",
+        "repo":"https://github.com/ShibamRoy9826/EcoSight-Geek-a-thon-project",
+        "demo":"https://www.youtube.com/watch?v=Wlp6DpsPWmw&themeRefresh=1",
+        "imgSrc":"/projects/ecosight.jpg"
+    },
+    
+    {
+        "id":8,
+        "name":"SantaPlace",
+        "desc":"A website about christmas, made for an event called Boba drops by Hackclub",
+        "repo":"https://github.com/ShibamRoy9826/SantaPlace",
+        "demo":"https://shibamroy9826.github.io/SantaPlace",
+        "imgSrc":"/projects/SantaPlace.png"
+    },
+
+    {
+        "id":9,
+        "name":"KawaiiPet",
+        "desc":"A simple pet simulator game, my first proper game ever",
+        "repo":"https://github.com/ShibamRoy9826/KawaiiPet",
+        "demo":"https://cloud-fgf2azwgd-hack-club-bot.vercel.app/0kawaiipet_demo.mp4",
+        "imgSrc":"/projects/KawaiiPet.png"
+    },
+    {
+        "id":10,
+        "name":"Conversafe",
+        "desc":"A FOSS language learning platform!",
+        "repo":"https://github.com/ShibamRoy9826/Conversafe",
+        "demo":"",
+        "imgSrc":"/projects/conversafe.png"
+    }
+
+]
