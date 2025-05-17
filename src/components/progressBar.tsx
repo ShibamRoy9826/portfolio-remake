@@ -10,7 +10,9 @@ interface Props{
 const ProgressBar:React.FC<Props>=({full,percent})=>{
     return(
         <div className={style.progressContainer} style={{width:full}}>
-            <motion.div className={style.progressBar} 
+            <motion.div className={style.progressBar} whileHover={{
+                scale:1.05,backgroundColor:"var(--primary-light)"
+            }}
                   initial={true} 
                   animate={{ width: `${percent}%`}}
                   transition={{ duration: 1, type:"spring"}}>

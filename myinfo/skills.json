@@ -1,16 +1,76 @@
+
 {
-    "langs":{
-        "python":{
-            "id":1,
+    "langs":[
+        {
+            "id":"1a",
             "img":"/lang/python.png",
             "title":"Python",
-            "progress":90
+            "progress":90,
+            "currLearn":false
         },
-        "cpp":{
-            "id":2,
+
+        {
+            "id":"1b",
             "img":"/lang/cpp.png",
             "title":"C++",
-            "progress":40
+            "progress":30,
+            "currLearn":true
         }
-    }
+
+    ],
+    "fields":[
+        {
+            "id":"2a",
+            "img":"/fields/webdev.png",
+            "title":"Web development",
+            "progress":60,
+            "currLearn":false
+        },
+        {
+            "id":"2b",
+            "img":"/fields/datascience.png",
+            "title":"Data Science",
+            "progress":10,
+            "currLearn":true
+        },
+        {
+            "id":"2c",
+            "img":"/fields/hardware.png",
+            "title":"Electronics",
+            "progress":30,
+            "currLearn":true
+        }
+    ],
+    "frameworks":[
+        {
+            "id":"3a",
+            "img":"/tech/nextjs.svg",
+            "title":"NextJS",
+            "progress":60,
+            "currLearn":true
+        },
+        {
+            "id":"3b",
+            "img":"/tech/django.jpeg",
+            "title":"Django",
+            "progress":70,
+            "currLearn":false
+        },
+        {
+            "id":"3c",
+            "img":"/tech/git.png",
+            "title":"Git",
+            "progress":90,
+            "currLearn":false
+        },
+        {
+            "id":"3d",
+            "img":"/tech/linux.png",
+            "title":"Linux(Arch btw)",
+            "progress":90,
+            "currLearn":false
+        }
+
+    ]
 }
+    
