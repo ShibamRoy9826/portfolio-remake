@@ -8,11 +8,9 @@ interface VizBar {
   height: number;
   pos: number;
 }
+
 const AudioViz=()=>{
-    // let waveList=[];
-    // for(let i=0; i<38;++i){
-    //     waveList.push([Math.floor(Math.random()*200),  i]);
-    // };
+    let barWidth;
 
     const { musicData, updateState} = useMusicContext();
 
@@ -22,7 +20,6 @@ const AudioViz=()=>{
     const dataArrayRef = useRef<Uint8Array | null>(null); 
     const animationFrameIdRef= useRef<number | null>(null); 
     const [vizData, setVizData] = useState<VizBar[]>([]);
-    let barWidth;
 
     useEffect(()=>{
         if(typeof window == "undefined") return;
