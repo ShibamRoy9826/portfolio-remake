@@ -6,8 +6,7 @@ import {motion} from "framer-motion";
 
 async function fetchSkills(){
     try{
-        const d=window.location.origin;
-        const response=await fetch(d+"/api/skills");
+        const response=await fetch("/api/skills");
         const jsonData=await response.json();
         return jsonData;
     }catch{

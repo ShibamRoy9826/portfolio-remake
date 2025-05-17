@@ -5,8 +5,7 @@ import {useState, useEffect} from "react";
 
 async function fetchProjects(){
     try{
-        const d=window.location.origin;
-        const response=await fetch(d+"/api/projects");
+        const response=await fetch("/api/projects");
         const jsonData=await response.json();
         return jsonData;
     }catch{
