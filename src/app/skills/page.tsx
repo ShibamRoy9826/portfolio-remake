@@ -58,7 +58,7 @@ function Skills(){
                                                 </motion.div>
                                             )}
                                         </div>
-                                        <ProgressBar full="35vw" percent={l.progress}/>
+                                        <ProgressBar full="35vw" percent={l.progress} secondary={l.currLearn}/>
                                     </li>
                                 ))
                         )}
@@ -85,7 +85,7 @@ function Skills(){
                                             )}
                                         </div>
 
-                                        <ProgressBar full="35vw" percent={f.progress}/>
+                                        <ProgressBar full="35vw" percent={f.progress} secondary={f.currLearn}/>
                                     </li>
                                 )))
                             }
@@ -111,7 +111,7 @@ function Skills(){
                                             )}
                                         </div>
 
-                                        <ProgressBar full="10vw" percent={f.progress}/>
+                                        <ProgressBar full="10vw" percent={f.progress} secondary={f.currLearn}/>
                                     </li>
                                 )))
                             }

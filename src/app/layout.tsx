@@ -6,6 +6,7 @@ import CustomCursor from "@/components/cursor";
 import Progress from "@/components/progress";
 import {MusicContextProvider} from "@/contexts/musicContext";
 import AudioViz from "@/components/AudioViz";
+import PageWrapper from "@/components/pageAnimation";
 
 const inconsolata=Inconsolata({
   subsets:["latin"],
@@ -35,7 +36,8 @@ export default function RootLayout({
 
         <main className="flex flex-row items-start justify-start w-full h-full">
           <Progress/>
-        {children}
+
+          <PageWrapper>{children}</PageWrapper>
         </main>
 
         </MusicContextProvider>

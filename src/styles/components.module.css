@@ -79,7 +79,7 @@
     height:80vh;
     width:8px;
     border-radius:2px;
-    position: relative;
+    position: fixed;
     left:1.5rem;
     z-index: 2;
     background-color: #1e1e2e;
@@ -160,7 +160,14 @@
     margin: 0.5rem;
     width:2rem;
     background-color: var(--primary-light);
+    border-radius:10px;
     box-shadow:0 0 30px 10px #ae6dff44;
+    z-index: 1000;
+}
+.audioWaveHidden{
+    margin: 0.5rem;
+    width:2rem;
+    border-radius:10px;
     z-index: 1000;
 }
 

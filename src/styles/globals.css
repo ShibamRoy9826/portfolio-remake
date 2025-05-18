@@ -16,6 +16,8 @@
   :root {
     --background: #11111b;
     --secondary:#89b4fa;
+    --secondary-light:#bad5ff;
+    --secondary-shadow:#89b4fa44;
     /* --bg: #11111b; */
     --bg: #0b0b0f;
     /* --bg2: #1e1e2e; */

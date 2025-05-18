@@ -12,8 +12,15 @@
 }
 
 .progressBar{
-    background-color: #ae6dff;
+    background-color: var(--primary);
     border-radius: 10px;
     height:8px;
     box-shadow:0 0 20px 5px #ae6dff44;
+}
+
+.progressBarSecondary{
+    background-color: var(--secondary);
+    border-radius: 10px;
+    height:8px;
+    box-shadow:0 0 20px 5px var(--secondary-shadow);
 }

@@ -1,7 +1,7 @@
 "use client"
 
 import * as motion from "motion/react-client";
-import React, { useState ,useEffect} from "react";
+import React, { useState ,useEffect,useRef} from "react";
 import style from "@/styles/components.module.css";
 
 interface Props{
@@ -12,15 +12,28 @@ interface Props{
 }
 
 const Switch:React.FC<Props>=({svg,className,func,funcOff})=>{
-    const [isOn, setIsOn] = useState(true);
+    const [isOn, setIsOn] = useState(false);
 
     const toggleSwitch = () => setIsOn(!isOn);
+    const sfxElementRef=useRef<HTMLAudioElement|null>(null);
 
     useEffect(()=>{
-        if(!isOn){
-            func();
+        if(isOn){
+            try{
+                func();
+                sfxElementRef.current=new Audio("/sfx/switch-on.wav");
+                sfxElementRef.current.play();
+            }catch{
+                func();
+            }
         }else{
-            funcOff();
+            try{
+                funcOff();
+                sfxElementRef.current=new Audio("/sfx/switch-off.wav");
+                sfxElementRef.current.play();
+            }catch{
+                funcOff();
+            }
         }
     },[isOn]);
 
@@ -31,7 +44,7 @@ const Switch:React.FC<Props>=({svg,className,func,funcOff})=>{
         <button
             className={`${style.switchInnerBox} linkCursor`}
             style={{
-                justifyContent: "flex-" + (isOn ? "start" : "end"),
+                justifyContent: "flex-" + (isOn ? "end" : "start"),
             }}
             onClick={toggleSwitch}
         >

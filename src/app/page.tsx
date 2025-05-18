@@ -7,8 +7,8 @@ export default function Home() {
     
     <section className="w-[100vw] h-full">
       <div className="flex flex-col items-center justify-center w-full h-full mt-24">
-        <p className="text-6xl textCursor">Hi, Welcome to my website!</p>
-        <h1 className="text-8xl mt-8 textCursor">I am <b><span className="textCursor">Shibam Roy</span></b></h1>
+        <p className="text-8xl textCursor">Hey there, I am <b><span className="textCursor">Shibam.</span></b></p>
+        <h1 className="text-6xl mt-8 textCursor">I make things with code</h1>
       </div>
 
       <div className="flex flex-row items-center justify-center">
