@@ -2,13 +2,13 @@
     height:8px;
     border-radius:2px;
     position: relative;
-    left:1.5rem;
     z-index: 2;
     background-color: #1e1e2e;
     box-shadow:15px 10px 50px 10px #00000066;
     display: flex;
     flex-direction: col;
     align-items: start;
+    pointer-events: all;
 }
 
 .progressBar{
@@ -16,10 +16,24 @@
     border-radius: 10px;
     height:8px;
     box-shadow:0 0 20px 5px #ae6dff44;
+    pointer-events: all;
+}
+
+.progressBar:hover{
+    background-color: var(--primary-light);
+    border-radius: 10px;
+    height:8px;
+    box-shadow:0 0 20px 5px var(--primary-shadow);
 }
 
 .progressBarSecondary{
     background-color: var(--secondary);
+    border-radius: 10px;
+    height:8px;
+    box-shadow:0 0 20px 5px var(--secondary-shadow);
+}
+.progressBarSecondary:hover{
+    background-color: var(--secondary-light);
     border-radius: 10px;
     height:8px;
     box-shadow:0 0 20px 5px var(--secondary-shadow);

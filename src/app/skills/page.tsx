@@ -37,28 +37,28 @@ function Skills(){
     },[]);
 
     return(
-        <div className="flex items-center justify-center w-full h-full">
-            <div className="w-[90%] h-full flex-col grid grid-cols-2 gap-8">
+        <div className="flex items-center justify-center w-full h-full mt-28">
+            <div className="w-[90%] h-full flex-col grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="flex flex-col items-center rounded-xl p-12 justify-center bg-[var(--bg3)]">
-                    <h1 className="text-center text-2xl">Programming Languages</h1>
-                    <ul>
+                    <h1 className="text-center text-2xl mb-4">Programming Languages</h1>
+                    <ul className="p-4">
                         {
                             skillsData && (
                                 skillsData?.langs.map((l:SkillType)=>(
                                     <li key={l.id} className="flex flex-col items-center justify-center">
                                         <div className="flex flex-row items-center justify-center">
                                             <Image src={l.img} alt={l.title} height={30} width={30}/>
-                                            <p className="flex items-center justify-center m-4 text-center text-[var(--fg2)] text-lg">{l.title}
+                                            <p className="flex items-center justify-center m-4  text-center text-[var(--fg2)] text-lg">{l.title}
                                             </p>
                                             {l.currLearn && (
                                                 <motion.div
                                                 animate={{opacity:[0,1,0]}}
                                                 transition={{repeat:Infinity,repeatType:"loop",type:"tween",duration:2,ease:"easeInOut"}}>
-                                                    <span className="m-4 text-center text-[var(--secondary)] text-md">[In Progress]</span>
+                                                    <span className="mx-4 text-center text-[var(--secondary)] text-md">[In Progress]</span>
                                                 </motion.div>
                                             )}
                                         </div>
-                                        <ProgressBar full="35vw" percent={l.progress} secondary={l.currLearn}/>
+                                        <ProgressBar full={(window.innerWidth>768)?"35vw":"80vw"} percent={l.progress} secondary={l.currLearn}/>
                                     </li>
                                 ))
                         )}
@@ -66,7 +66,7 @@ function Skills(){
                     </ul>
                 </div>
                 <div className="flex flex-col items-center rounded-xl p-12 justify-center bg-[var(--bg3)]">
-                    <h1 className="text-center text-2xl">Fields of interest</h1>
+                    <h1 className="text-center text-2xl mb-4">Fields of interest</h1>
                     <ul>
                         {
                             skillsData && (
@@ -85,15 +85,15 @@ function Skills(){
                                             )}
                                         </div>
 
-                                        <ProgressBar full="35vw" percent={f.progress} secondary={f.currLearn}/>
+                                        <ProgressBar full={(window.innerWidth>768)?"35vw":"80vw"} percent={f.progress} secondary={f.currLearn}/>
                                     </li>
                                 )))
                             }
                     </ul>
                 </div>
-                <div className="col-span-2 flex flex-col items-center rounded-xl p-12 justify-center bg-[var(--bg3)]">
-                    <h1 className="text-center text-2xl">Rest of my Tech Stack</h1>
-                    <ul className="w-full grid grid-cols-5">
+                <div className="col-span-1 md:col-span-2 flex flex-col items-center rounded-xl p-12 justify-center bg-[var(--bg3)]">
+                    <h1 className="text-center text-2xl mb-4">Rest of my Tech Stack</h1>
+                    <ul className="w-full grid grid-cols-1 md:grid-cols-5">
                         {
                             skillsData && (
                                 skillsData?.frameworks.map((f:SkillType)=>(
@@ -111,7 +111,7 @@ function Skills(){
                                             )}
                                         </div>
 
-                                        <ProgressBar full="10vw" percent={f.progress} secondary={f.currLearn}/>
+                                        <ProgressBar full={(window.innerWidth>768)?"10vw":"80vw"} percent={f.progress} secondary={f.currLearn}/>
                                     </li>
                                 )))
                             }

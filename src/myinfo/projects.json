@@ -53,7 +53,7 @@
     {
         "id":7,
         "name":"EcoSight",
-        "desc":"A website to make you aware about your contribution to pollution[Hackathon project]",
+        "desc":"A website to make you aware about your contribution to pollution",
         "repo":"https://github.com/ShibamRoy9826/EcoSight-Geek-a-thon-project",
         "demo":"https://www.youtube.com/watch?v=Wlp6DpsPWmw&themeRefresh=1",
         "imgSrc":"/projects/ecosight.jpg"

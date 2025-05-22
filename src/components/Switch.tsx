@@ -13,26 +13,32 @@ interface Props{
 
 const Switch:React.FC<Props>=({svg,className,func,funcOff})=>{
     const [isOn, setIsOn] = useState(false);
+    const [changed,setChanged]=useState(false);
 
-    const toggleSwitch = () => setIsOn(!isOn);
+    const toggleSwitch = () => {
+        setChanged(true);
+        setIsOn(!isOn);
+    }
     const sfxElementRef=useRef<HTMLAudioElement|null>(null);
 
     useEffect(()=>{
-        if(isOn){
-            try{
-                func();
-                sfxElementRef.current=new Audio("/sfx/switch-on.wav");
-                sfxElementRef.current.play();
-            }catch{
-                func();
-            }
-        }else{
-            try{
-                funcOff();
-                sfxElementRef.current=new Audio("/sfx/switch-off.wav");
-                sfxElementRef.current.play();
-            }catch{
-                funcOff();
+        if(changed){
+            if(isOn){
+                try{
+                    func();
+                    sfxElementRef.current=new Audio("/sfx/switch-on.wav");
+                    sfxElementRef.current.play();
+                }catch{
+                    func();
+                }
+            }else{
+                try{
+                    funcOff();
+                    sfxElementRef.current=new Audio("/sfx/switch-off.wav");
+                    sfxElementRef.current.play();
+                }catch{
+                    funcOff();
+                }
             }
         }
     },[isOn]);

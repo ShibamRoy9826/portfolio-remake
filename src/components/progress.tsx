@@ -30,11 +30,27 @@ export default function Progress(){
 
     return(
         <div className={style.progressContainer}>
-            <motion.div className={style.progressBar} 
-                  initial={true} 
-                  animate={{ height: `${progress}%`}}
-                  transition={{ duration: 0.5, type:"spring"}}>
-                  </motion.div>
+          {
+            (typeof window!=="undefined")?
+              (window.innerWidth>768)?
+              <motion.div className={style.progressBar} 
+                    initial={true} 
+                    animate={{ height: `${progress}%`}}
+                    transition={{ duration: 0.5, type:"spring"}}>
+                    </motion.div>:
+              <motion.div className={style.progressBar} 
+                    initial={true} 
+                    animate={{ width: `${progress}%`}}
+                    transition={{ duration: 0.5, type:"spring"}}>
+                    </motion.div>
+              :
+              <motion.div className={style.progressBar} 
+                    initial={true} 
+                    animate={{ width: `${progress}%`}}
+                    transition={{ duration: 0.5, type:"spring"}}>
+                    </motion.div>
+
+          }
         </div>
     );
 }

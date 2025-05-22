@@ -1,20 +1,3 @@
-.aboutContainer{
-    border-radius:1rem;
-    z-index: 1 !important;
-}
-
-.aboutContentContainer{
-    position: absolute;
-    background-color: var(--bg3);
-    z-index: 3 !important;
-}
-
-.aboutContentContainer p{
-    background-color: inherit;
-    z-index: 3 !important;
-    color:var(--fg2);
-}
-
 .borderContainer{
     position: absolute;
     z-index: 2 ;
@@ -44,10 +27,10 @@
 }
 
 .rotatingBorder{
-    height:40vh;
-    width:50vw;
+    height:30vw;
+    width:60vw;
+    max-width:50vw;
     background-image:linear-gradient(120deg,var(--bg2) 10%,var(--bg) 100%);
     background-size: cover;
     background-repeat: no-repeat;
 }
-

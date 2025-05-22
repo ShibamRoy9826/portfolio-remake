@@ -37,8 +37,8 @@ function Projects(){
         
        
     return(
-        <div className="w-full h-full flex flex-row items-center justify-center">
-            <div className="w-[80vw] grid grid-cols-3 gap-8 pb-24">
+        <div className="my-28 w-full h-full flex flex-row items-center justify-center">
+            <div className="w-[80vw] grid grid-cols-1 lg:grid-cols-3 gap-8 pb-24">
                 {
                     projectData && (
                         projectData.map((p:ProjectType)=>(

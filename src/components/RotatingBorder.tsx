@@ -31,16 +31,22 @@ const RotatingBorder:React.FC<Props>=({innerStuff,duration,className})=>{
         }
     )
     return(
-
-    <div className={`relative rounded-xl flex flex-col items-center ${className} mt-24 ${style.aboutContainer}`}>
-      <motion.div className={`inset-[-4px] rounded-xl ${style.borderContainer}`} style={{
-        backgroundImage:gradientColor
-      }}>
-      </motion.div>
-      <div className={`inset-0 rounded-xl flex flex-col items-center justify-center w-full h-full ${style.aboutContentContainer}`}>
+      <div className={`relative w-auto h-auto md:h-[40vh] md:max-w-[55vw] z-1 mb-12 mx-2 mt-12`}>
+        <motion.div className={`relative rounded-xl z-2`} style={{
+          backgroundImage:gradientColor,
+          width:"100%",
+          height:"100%"
+        }}/>
+      <div className={`bg-[var(--bg3)] relative rounded-xl z-3`} style={{
+        bottom:"calc(100% - 2px)",
+        left:"2px",
+        width:"calc(100% - 4px)",
+        height:"calc(100% - 4px)"
+      }} 
+      >
         {innerStuff}
       </div>
-    </div>
+      </div>
     );
 }
 export default RotatingBorder;

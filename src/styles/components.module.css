@@ -81,6 +81,7 @@
     border-radius:2px;
     position: fixed;
     left:1.5rem;
+    top:12vh;
     z-index: 2;
     background-color: #1e1e2e;
     box-shadow:15px 10px 50px 10px #00000066;
@@ -96,7 +97,7 @@
     box-shadow:0 0 20px 5px #ae6dff44;
 }
 
-.github{
+.aboutButton{
     display:flex;
     flex-direction:row;
     align-items:center;
@@ -109,9 +110,11 @@
     padding-top:1rem;
     padding-bottom:1rem;
     transition: all 0.6s ease-in-out;
+    position:relative;
+    z-index:-10000 ;
 }
 
-.reddit{
+.projectsButton{
     display:flex;
     flex-direction:row;
     align-items:center;
@@ -123,12 +126,14 @@
     padding-right:1rem;
     padding-top:1rem;
     padding-bottom:1rem;
+    position:relative;
+    z-index:-1000 ;
 
     transition: all 0.6s ease-in-out;
 }
 
 
-.reddit:hover,.github:hover{
+.aboutButton:hover,.projectsButton:hover{
     background-color: var(--primary-light);
     box-shadow:0 15px 30px 10px #ae6dff44;
     transform: scale(1.1);
@@ -168,7 +173,6 @@
     margin: 0.5rem;
     width:2rem;
     border-radius:10px;
-    z-index: 1000;
 }
 
 .button{
@@ -187,9 +191,35 @@
     margin-top:1rem;
     margin-left:1rem;
     margin-right: 1rem;
+    position:relative;
+    z-index:4;
 }
 .button:hover{
     transform:scale(1.1);
     background-color: var(--primary-light);
     box-shadow:0 0 30px 10px #ae6dff44;
+}
+
+
+/* Media queries */
+@media (max-width:768px){
+    .progressContainer{
+        position:fixed;
+        top:95vh;
+        right:1rem;
+        width:80vw;
+        height:8px;
+    }
+    .progressBar{
+        height:8px;
+    }
+
+    .musicSwitchContainer{
+        position:static;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: auto;
+    }
 }

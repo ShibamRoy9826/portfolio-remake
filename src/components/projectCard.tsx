@@ -19,7 +19,7 @@ const ProjectCard:React.FC<Props>=({projectName,projectDesc,projectImgSrc,projec
     const handleMouseLeave=()=> setHover(false);
 
     return(
-        <motion.div className="flex flex-col bg-[var(--bg3)] rounded-xl w-[100%] h-[20rem] shadowBox" whileHover={{scale:1.1,zIndex:100}} exit={{scaleX:1,scaleY:1}} onMouseEnter={handleMouseHover} onMouseLeave={handleMouseLeave}>
+        <motion.div className="flex flex-col bg-[var(--bg3)] rounded-xl w-[100%] h-[20rem] shadowBox" whileHover={{scale:1.1,zIndex:100}} exit={{scaleX:1,scaleY:1}} onMouseEnter={handleMouseHover} onTap={handleMouseHover} onMouseLeave={handleMouseLeave} onTapCancel={handleMouseLeave}>
             <div className="relative w-full h-[65%]" style={{
                 borderBottom:"2px solid var(--fg3)"
             }}>
