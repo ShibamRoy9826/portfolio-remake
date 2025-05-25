@@ -71,7 +71,7 @@ function NavBar(){
   const pathName=usePathname();
 
   return(
-      <header className={`fixed top-0 left-0 w-[100vw] h-auto max-h-[12vh] py-2 ${compoStyle.nav}`}>
+      <header className={`fixed top-0 left-0 w-[100vw] h-auto max-h-[12vh] ${compoStyle.nav}`}>
 
       <button className="ml-4 outline-none lg:hidden relative top-4 flex flex-col items-center justify-center max-w-[8rem] z-[9999] linkCursor" onClick={handleMenuToggle}>
         <motion.div
@@ -166,7 +166,10 @@ function NavBar(){
         }
     </AnimatePresence>
 
-      <ol className="hidden md:flex flex flex-row items-center justify-center py-6 ">
+      <ol className="hidden md:flex flex flex-row items-center justify-center py-6 "
+      style={{
+        backdropFilter:"blur(10px)"
+      }}>
         {navItems.map((item)=>(
         <li className="mx-4 text-center text-xl linkCursor" key={item.id}>
           <Link href={item.path}>

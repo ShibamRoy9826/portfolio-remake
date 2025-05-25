@@ -7,7 +7,7 @@ export default function Home() {
     
     <section className="w-[100vw] h-[100vh] flex flex-col items-center justify-center">
       <div className="flex flex-col px-8 items-center justify-center w-full h-auto lg:relative lg:bottom-16">
-        <p className="text-5xl text-center lg:text-8xl textCursor">Hey there, I am <b><span className="textCursor">Shibam.</span></b></p>
+        <p className="text-5xl text-center md:text-5xl lg:text-8xl textCursor">Hey there, I am <b><span className="textCursor">Shibam.</span></b></p>
         <h1 className="text-3xl lg:text-5xl text-center mt-8 textCursor text-[var(--fg2)]">I make things with code</h1>
       </div>
 

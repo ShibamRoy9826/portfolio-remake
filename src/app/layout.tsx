@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { Inconsolata } from "next/font/google";
 import "@/styles/globals.css";
 import {MusicContextProvider} from "@/contexts/musicContext";
+import { inconsolata } from "./fonts";
 
 // components
 import NavBar from "@/components/navbar";
@@ -9,12 +9,6 @@ import CustomCursor from "@/components/cursor";
 import Progress from "@/components/progress";
 import AudioViz from "@/components/AudioViz";
 import PageWrapper from "@/components/pageAnimation";
-// import QuadTreeBG from "@/components/bg";
-
-
-const inconsolata=Inconsolata({
-  subsets:["latin"],
-})
 
 export const metadata: Metadata = {
   title: "Shibam Roy",
@@ -44,7 +38,6 @@ export default function RootLayout({
     Your browser does not support the video tag.
   </video>
         
-        {/* <QuadTreeBG/> */}
         <CustomCursor/>
         
           <MusicContextProvider>

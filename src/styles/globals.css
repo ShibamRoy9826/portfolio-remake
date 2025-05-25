@@ -33,9 +33,9 @@
   }
 }
 
-*{
+/* *{
   cursor:none;
-}
+} */
 
 ::-moz-selection { /* Code for Firefox */
   color: var(--fg);
@@ -45,6 +45,9 @@
 ::selection {
   color: var(--fg);
   background: var(--bg3);
+}
+::-webkit-scrollbar {
+    display: none;
 }
 
 html{

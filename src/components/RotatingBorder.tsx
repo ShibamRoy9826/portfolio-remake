@@ -1,6 +1,6 @@
 "use client"
 
-import style from "@/styles/about.module.css";
+// import style from "@/styles/about.module.css";
 import {motion,useMotionValue,useTransform,animate} from "framer-motion";
 import React ,{useEffect} from "react";
 
@@ -31,17 +31,19 @@ const RotatingBorder:React.FC<Props>=({innerStuff,duration,className})=>{
         }
     )
     return(
-      <div className={`relative w-auto h-auto md:h-[40vh] md:max-w-[55vw] z-1 mb-12 mx-2 mt-12`}>
+      <div className={`relative w-auto h-auto md:h-[45vh] md:max-w-[55vw] z-1 mb-12 mx-2 mt-12`}>
         <motion.div className={`relative rounded-xl z-2`} style={{
           backgroundImage:gradientColor,
           width:"100%",
           height:"100%"
         }}/>
-      <div className={`bg-[var(--bg3)] relative rounded-xl z-3`} style={{
+      <div className={`relative rounded-xl z-3 overflow-y-scroll`} style={{
         bottom:"calc(100% - 2px)",
         left:"2px",
         width:"calc(100% - 4px)",
-        height:"calc(100% - 4px)"
+        height:"calc(100% - 4px)",
+        backgroundImage:"linear-gradient(120deg,var(--bg2) 10%,var(--bg) 100%)"
+
       }} 
       >
         {innerStuff}

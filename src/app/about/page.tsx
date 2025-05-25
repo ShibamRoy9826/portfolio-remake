@@ -51,11 +51,11 @@ function About() {
 
              <RotatingBorder
                innerStuff={
-                 <p className="text-[1.4rem] p-8 text-[var(--fg2)] textSmallCursor p-4 text-center md:text-start">
-                   Hi! I am Shibam, an {currYear - 2007} year old programmer, having keen interest in Data Science. I like doing web development, and electronics too!
+                 <p className="text-[1.4rem] p-8 text-[var(--fg)] textSmallCursor p-4 text-center md:text-start">
+                   Hi! I am <b>Shibam Roy</b>, an {currYear - 2007} year old programmer, having keen interest in <b>Data Science</b>. I like doing <b>web development, and electronics too</b>!
                    <br />
-                   Besides programming, I like to live a normal life, having fun with family, listening to music and occasionally watching Anime. <br /> If you ever meet me in person, you would understand I am the most introverted person you may have ever seen, I find it hard to communicate with people in real life:(
-                   Anways, I love to contribute to open source code, and make open source projects! I am still a beginner learner in this programming journey, have a long way to go, Wish me luck!<br />
+                   Besides programming, I like to live a normal life, having fun with family, listening to music and occasionally watching Anime. <br /> If you ever meet me in person, you would understand I am the most introverted person you may have ever seen, I find it hard to communicate with people in real life:( <br/>
+                   Anyways, I love to contribute to open source code, and <b>make open source projects</b>! I am still a beginner learner in this programming journey, have a long way to go, Wish me luck!<br />
                    Thanks for being interested and reading this, I doubt if most people even read this.
                  </p>
                }

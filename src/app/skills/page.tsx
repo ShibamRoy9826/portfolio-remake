@@ -3,6 +3,7 @@ import ProgressBar from "../../components/progressBar";
 import Image from "next/image";
 import {useState, useEffect} from "react";
 import {motion} from "framer-motion";
+import { silkscreen } from "../fonts";
 
 async function fetchSkills(){
     try{
@@ -39,11 +40,12 @@ function Skills(){
     return(
         <div className="flex items-center justify-center w-full h-full mt-28">
             <div className="w-[90%] h-full flex-col grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="flex flex-col items-center rounded-xl p-12 justify-center bg-[var(--bg3)]">
-                    <h1 className="text-center text-2xl mb-4">Programming Languages</h1>
+                <div className="flex flex-col items-center rounded-xl p-12 justify-center border-3 border-[var(--bg3)]"
+                style={{backgroundImage:"linear-gradient(120deg,var(--bg2) 10%,var(--bg) 100%)"}}>
+                    <h1 className={`${silkscreen.className} text-center text-2xl mb-4`}>Programming Languages</h1>
                     <ul className="p-4">
                         {
-                            skillsData && (
+                            skillsData?(
                                 skillsData?.langs.map((l:SkillType)=>(
                                     <li key={l.id} className="flex flex-col items-center justify-center">
                                         <div className="flex flex-row items-center justify-center">
@@ -61,15 +63,22 @@ function Skills(){
                                         <ProgressBar full={(window.innerWidth>768)?"35vw":"80vw"} percent={l.progress} secondary={l.currLearn}/>
                                     </li>
                                 ))
-                        )}
+                        ):
+                        <motion.div className="flex items-center justify-center rounded-xl h-[18vh] p-24 w-full"
+                        style={{backgroundColor:"rgba(255,255,255,0.05)"}} initial={{opacity:1}} animate={{opacity:[0,1,0]}} transition={{duration:1,repeat:Infinity,repeatType:"loop"}}>
+                            <p className="text-center text-[var(--fg2)]"><i>Items Loading...</i></p>
+                        </motion.div>
+                    
+                    }
 
                     </ul>
                 </div>
-                <div className="flex flex-col items-center rounded-xl p-12 justify-center bg-[var(--bg3)]">
-                    <h1 className="text-center text-2xl mb-4">Fields of interest</h1>
+                <div className="flex flex-col items-center rounded-xl p-12 justify-center border-3 border-[var(--bg3)]"
+                style={{backgroundImage:"linear-gradient(120deg,var(--bg2) 0%,var(--bg) 100%)"}}>
+                    <h1 className={`${silkscreen.className} text-center text-2xl mb-4`}>Fields of interest</h1>
                     <ul>
                         {
-                            skillsData && (
+                            skillsData?(
                                 skillsData?.fields.map((f:SkillType)=>(
                                     <li key={f.id} className="flex flex-col items-center justify-center">
                                         <div className="flex flex-row items-center justify-center">
@@ -87,15 +96,23 @@ function Skills(){
 
                                         <ProgressBar full={(window.innerWidth>768)?"35vw":"80vw"} percent={f.progress} secondary={f.currLearn}/>
                                     </li>
-                                )))
+                                ))):
+
+                        <motion.div className="flex items-center justify-center rounded-xl h-[18vh] p-24 w-full"
+                        style={{backgroundColor:"rgba(255,255,255,0.05)"}} initial={{opacity:1}} animate={{opacity:[0,1,0]}} transition={{duration:1,repeat:Infinity,repeatType:"loop"}}>
+                            <p className="text-center text-[var(--fg2)]"><i>Items Loading...</i></p>
+                        </motion.div>
                             }
                     </ul>
                 </div>
-                <div className="col-span-1 md:col-span-2 flex flex-col items-center rounded-xl p-12 justify-center bg-[var(--bg3)]">
-                    <h1 className="text-center text-2xl mb-4">Rest of my Tech Stack</h1>
+                <div className="col-span-1 md:col-span-2 flex flex-col items-center rounded-xl p-12 justify-center border-3 border-[var(--bg3)]"
+                style={{
+                    backgroundImage:"linear-gradient(120deg,var(--bg2) 10%,var(--bg) 100%)"
+                }}>
+                    <h1 className={`${silkscreen.className} text-center text-2xl mb-4`}>Rest of my Tech Stack</h1>
                     <ul className="w-full grid grid-cols-1 md:grid-cols-5">
                         {
-                            skillsData && (
+                            skillsData? (
                                 skillsData?.frameworks.map((f:SkillType)=>(
                                     <li key={f.id} className="flex flex-col items-center justify-center">
                                         <div className="flex flex-row items-center justify-center">
@@ -113,7 +130,12 @@ function Skills(){
 
                                         <ProgressBar full={(window.innerWidth>768)?"10vw":"80vw"} percent={f.progress} secondary={f.currLearn}/>
                                     </li>
-                                )))
+                                ))):
+
+                        <motion.div className="flex items-center justify-center rounded-xl h-[18vh] p-24 w-full md:col-span-5"
+                        style={{backgroundColor:"rgba(255,255,255,0.05)"}} initial={{opacity:1}} animate={{opacity:[0,1,0]}} transition={{duration:1,repeat:Infinity,repeatType:"loop"}}>
+                            <p className="text-center text-[var(--fg2)]"><i>Items Loading...</i></p>
+                        </motion.div>
                             }
                     </ul>
                 </div>
