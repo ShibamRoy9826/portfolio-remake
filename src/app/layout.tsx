@@ -27,7 +27,7 @@ export default function RootLayout({
       <body
         className={inconsolata.className}
       >
-        <video
+        {/* <video
           autoPlay
           muted
           loop
@@ -36,7 +36,7 @@ export default function RootLayout({
         >
     <source src="/bg_optimized.webm" type="video/mp4" />
     Your browser does not support the video tag.
-  </video>
+  </video> */}
         
         <CustomCursor/>
         

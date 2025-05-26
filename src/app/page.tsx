@@ -1,17 +1,78 @@
+"use client"
 // import Image from "next/image";
 import MovingButton from "../components/movingButton";
 import style from "@/styles/components.module.css";
+import {motion,AnimatePresence} from "framer-motion";
+import { useState } from "react";
+import { silkscreen } from "./fonts";
 
 export default function Home() {
+
+  const [hoverState,setHover]=useState(false);
+
   return (
     
     <section className="w-[100vw] h-[100vh] flex flex-col items-center justify-center">
-      <div className="flex flex-col px-8 items-center justify-center w-full h-auto lg:relative lg:bottom-16">
-        <p className="text-5xl text-center md:text-5xl lg:text-8xl textCursor">Hey there, I am <b><span className="textCursor">Shibam.</span></b></p>
-        <h1 className="text-3xl lg:text-5xl text-center mt-8 textCursor text-[var(--fg2)]">I make things with code</h1>
+      <div className="flex flex-col px-8 items-center justify-center w-full h-auto lg:relative lg:bottom-16"
+          onMouseEnter={()=>setHover(true)}
+          onMouseLeave={()=>setHover(false)}
+      
+      >
+        <p className="text-5xl text-center md:text-5xl lg:text-8xl textCursor">
+          <motion.span
+          initial={{opacity:0}}
+          animate={{opacity:1}}
+          transition={{duration:1}}
+          className="textCursor"
+          >
+          Hey There,
+          </motion.span>
+          <motion.span
+          className="textCursor"
+          initial={{opacity:0}}
+          animate={{opacity:1}}
+          transition={{duration:1,delay:0.3}}
+          > 
+ I am  
+          <b className={`textCursor ${silkscreen.className}`}> Shibam</b>
+          </motion.span>
+          </p>
+
+          <motion.div
+          className="text-3xl lg:text-5xl text-center mt-8 textCursor text-[var(--fg2)]"
+          initial={{y:-50,opacity:0}}
+          animate={{opacity:1,y:0}}
+          transition={{duration:1,delay:0.3,type:"spring"}}
+          whileHover={{color:"#00000"}}
+          >
+            <AnimatePresence mode="wait">
+            {
+              (!hoverState)?
+              <motion.span
+              initial={{opacity:0,y:50}}
+              animate={{opacity:1,y:0}}
+              key="modal"
+              exit={{opacity:0,y:-50}}
+              >I pour my heart into everything I build 💝</motion.span>:
+              <motion.span
+              key="modal2"
+              initial={{opacity:0,y:50}}
+              animate={{opacity:1,y:0}}
+              exit={{opacity:0,y:-50}}
+              >Definitely didn't google how to make this</motion.span>
+            }
+            </AnimatePresence>
+            
+            </motion.div>
       </div>
 
-      <div className="my-16 lg:my-0 flex flex-col lg:flex-row items-center justify-center z-[0]">
+      <motion.div
+      className="my-16 lg:my-0 flex flex-col textCursor lg:flex-row items-center justify-center z-[0]"
+      initial={{opacity:0,y:50}}
+      animate={{opacity:1,y:0}}
+      transition={{duration:1,delay:0.6}}
+      
+      >
 
 
       <MovingButton
@@ -34,7 +95,7 @@ export default function Home() {
       />
 
 
-      </div>
+      </motion.div>
 
     </section>
 

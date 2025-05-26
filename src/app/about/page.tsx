@@ -4,11 +4,19 @@ import Component3D from "../../components/3DComponent";
 import MovingButton from "../../components/movingButton";
 import RotatingBorder from "../../components/RotatingBorder";
 import style from "@/styles/about.module.css";
+import { motion } from "framer-motion";
 
+
+const currYear = new Date().getFullYear();
+
+const intro=`Hi! I am $Shibam $Roy, an ${currYear - 2007} year old programmer, with a keen interest in $Data $Science. I enjoy $web $development, and tinkering with $electronics too! # Apart from programming, I live a normal life, having fun with family, studying, listening to music and occasionally watching Anime. # If you ever meet me in person, you'd would probably realize I am the most introverted person you've met, I find it hard to communicate with people in real life 😅 # Still, I love to $contribute $to $open $source , and $make $my $own $open $source $projects! I am just at the beginnning of my programming journey, and have a long way to go, Wish me luck! # Thanks for being interested and reading this, Not many people do, and I really appreciate it. 💖`;
+
+const words=intro.split(" ");
+console.log(words);
 
 function About() {
 
-  const currYear = new Date().getFullYear();
+
 
   return (
     <section className="flex flex-col md:flex-row items-center md:items-start lg:items-start justify-center mt-28 lg:mt-42">
@@ -48,16 +56,47 @@ function About() {
 
       </div>
 
-
              <RotatingBorder
                innerStuff={
-                 <p className="text-[1.4rem] p-8 text-[var(--fg)] textSmallCursor p-4 text-center md:text-start">
-                   Hi! I am <b>Shibam Roy</b>, an {currYear - 2007} year old programmer, having keen interest in <b>Data Science</b>. I like doing <b>web development, and electronics too</b>!
-                   <br />
-                   Besides programming, I like to live a normal life, having fun with family, listening to music and occasionally watching Anime. <br /> If you ever meet me in person, you would understand I am the most introverted person you may have ever seen, I find it hard to communicate with people in real life:( <br/>
-                   Anyways, I love to contribute to open source code, and <b>make open source projects</b>! I am still a beginner learner in this programming journey, have a long way to go, Wish me luck!<br />
-                   Thanks for being interested and reading this, I doubt if most people even read this.
-                 </p>
+                <div className="text-[1.4rem] p-8 text-[var(--fg2)]  textSmallCursor p-4 text-center md:text-start">
+                  {
+                    words.map((word:string)=>(
+                        (word!="#")?
+                          (!word.startsWith("$"))?
+                            <motion.span
+                              key={word+`${Math.random()}`}
+                              className="mr-2 inline-block"
+                              initial={{x:Math.random()*300,y:Math.random()*300, rotate:Math.random()*60,opacity:0}}
+                              animate={{x:0,y:0,rotate:0,opacity:1}}
+                              transition={{
+                                type:"spring",
+                                stiffnesss:500,
+                                damping:30,
+                                delay:Math.random()*0.9
+                              }}
+                              >
+                                {word}
+                            </motion.span>
+                          :
+                            <motion.span
+                              key={word+`${Math.random()}`}
+                              className="mr-2 inline-block text-[var(--fg)]"
+                              initial={{x:Math.random()*300,y:Math.random()*300, rotate:Math.random()*60,opacity:0}}
+                              animate={{x:0,y:0,rotate:0,opacity:1}}
+                              transition={{
+                                type:"spring",
+                                stiffnesss:500,
+                                damping:30,
+                                delay:Math.random()*0.9
+                              }}
+                              >
+                                <b>{word.slice(1)}</b>
+                            </motion.span>
+                      :
+                      <br/>
+                    ))
+                  }
+                </div>
                }
                duration={3}
                className={style.rotatingBorder}

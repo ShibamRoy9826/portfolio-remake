@@ -38,12 +38,12 @@
 } */
 
 ::-moz-selection { /* Code for Firefox */
-  color: var(--fg);
+  color: var(--secondary);
   background: var(--bg3);
 }
 
 ::selection {
-  color: var(--fg);
+  color: var(--secondary);
   background: var(--bg3);
 }
 ::-webkit-scrollbar {
