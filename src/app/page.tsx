@@ -59,7 +59,7 @@ export default function Home() {
               initial={{opacity:0,y:50}}
               animate={{opacity:1,y:0}}
               exit={{opacity:0,y:-50}}
-              >Definitely didn't google how to make this</motion.span>
+              >Definitely didn&apos;t google how to make this</motion.span>
             }
             </AnimatePresence>
             

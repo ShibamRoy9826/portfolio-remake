@@ -60,11 +60,11 @@ function About() {
                innerStuff={
                 <div className="text-[1.4rem] p-8 text-[var(--fg2)]  textSmallCursor p-4 text-center md:text-start">
                   {
-                    words.map((word:string)=>(
+                    words.map((word:string,i:number)=>(
                         (word!="#")?
                           (!word.startsWith("$"))?
                             <motion.span
-                              key={word+`${Math.random()}`}
+                              key={i}
                               className="mr-2 inline-block"
                               initial={{x:Math.random()*300,y:Math.random()*300, rotate:Math.random()*60,opacity:0}}
                               animate={{x:0,y:0,rotate:0,opacity:1}}
@@ -79,7 +79,7 @@ function About() {
                             </motion.span>
                           :
                             <motion.span
-                              key={word+`${Math.random()}`}
+                              key={i}
                               className="mr-2 inline-block text-[var(--fg)]"
                               initial={{x:Math.random()*300,y:Math.random()*300, rotate:Math.random()*60,opacity:0}}
                               animate={{x:0,y:0,rotate:0,opacity:1}}
@@ -93,7 +93,7 @@ function About() {
                                 <b>{word.slice(1)}</b>
                             </motion.span>
                       :
-                      <br/>
+                      <br key={i}/>
                     ))
                   }
                 </div>
