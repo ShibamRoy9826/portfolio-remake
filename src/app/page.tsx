@@ -52,10 +52,12 @@ export default function Home() {
               initial={{opacity:0,y:50}}
               animate={{opacity:1,y:0}}
               key="modal"
+              className="textCursor"
               exit={{opacity:0,y:-50}}
               >I pour my heart into everything I build 💝</motion.span>:
               <motion.span
               key="modal2"
+              className="textCursor"
               initial={{opacity:0,y:50}}
               animate={{opacity:1,y:0}}
               exit={{opacity:0,y:-50}}

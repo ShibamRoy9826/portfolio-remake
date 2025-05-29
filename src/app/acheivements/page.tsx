@@ -11,34 +11,68 @@ function Acheivements(){
             <ol className="flex flex-col w-auto mx-6 md:mx-12 lg:mx-24 rounded-xl p-12  border-3 border-[var(--bg3)]" style={{backgroundImage:"linear-gradient(120deg,var(--bg2) 10%,var(--bg) 100%)"}}>
 
                 <li className="mb-4">
-                    <motion.div style={{overflow:"hidden"}} initial={{opacity:0,width:0}} animate={{opacity:1,width:"auto"}} transition={{duration:1, type:"tween", delay:0}}> 
+                    <motion.div style={{overflow:"hidden"}} initial={{opacity:0,width:0}} animate={{opacity:1,width:"auto"}} transition={{duration:1, type:"tween", delay:0}} className="flex flex-row"> 
+                        <motion.div initial={{width:0,opacity:0}} animate={{opacity:1,width:"auto"}} transition={{duration:0.5,type:"spring",delay:1}}>
+                            <span className="text-4xl mr-4 text-start text-[var(--primary)]">&gt;</span>
+                        </motion.div>
                         <h1 className="text-start text-2xl md:text-4xl lg:text-nowrap">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Selected to visit ISRO Headquarters, Bengaluru(2025).
                         </h1>
                     </motion.div>
                 </li>
                 <li className="mb-4">
-                    <motion.div style={{overflow:"hidden"}} initial={{opacity:0,width:0}} animate={{opacity:1,width:"auto"}} transition={{duration:1, type:"tween", delay:1}}> 
+                    <motion.div style={{overflow:"hidden"}} initial={{opacity:0,width:0}} animate={{opacity:1,width:"auto"}} transition={{duration:1, type:"tween", delay:1}} className="flex flex-row"> 
+                        <motion.div initial={{width:0,opacity:0}} animate={{opacity:1,width:"auto"}} transition={{duration:0.5,type:"spring",delay:2}}>
+                            <span className="text-4xl mr-4 text-start text-[var(--primary)]">&gt;</span>
+                        </motion.div>
                         <h1 className="text-start text-2xl md:text-4xl lg:text-nowrap">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Selected for SSHP 2025, Japan.
                         </h1>
                     </motion.div>
                 </li>
 
                 <li className="mb-4"> 
-                    <motion.div style={{overflow:"hidden"}} initial={{opacity:0,width:0}} animate={{opacity:1,width:"auto"}} transition={{duration:1, type:"tween", delay:2}}> 
+                    <motion.div style={{overflow:"hidden"}} initial={{opacity:0,width:0}} animate={{opacity:1,width:"auto"}} transition={{duration:1, type:"tween", delay:2}} className="flex flex-row"> 
+                        <motion.div initial={{width:0,opacity:0}} animate={{opacity:1,width:"auto"}} transition={{duration:0.5,type:"spring",delay:3}}>
+                            <span className="text-4xl mr-4 text-start text-[var(--primary)]">&gt;</span>
+                        </motion.div>
                         <h1 className="text-start text-2xl md:text-4xl lg:text-nowrap">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Hackathon Winner at 16.
                         </h1>
                     </motion.div>
                 </li>
                 <li className="mb-4">
-                    <motion.div style={{overflow:"hidden"}} initial={{opacity:0,width:0}} animate={{opacity:1,width:"auto"}} transition={{duration:1, type:"tween", delay:3}}> 
+                    <motion.div style={{overflow:"hidden"}} initial={{opacity:0,width:0}} animate={{opacity:1,width:"auto"}} transition={{duration:1, type:"tween", delay:3}} className="flex flex-row"> 
+                        <motion.div initial={{width:0,opacity:0}} animate={{opacity:1,width:"auto"}} transition={{duration:0.5,type:"spring",delay:4}}>
+
+                            <span className="text-4xl mr-4 text-start text-[var(--primary)]">&gt;</span>
+                        </motion.div>
                         <h1 className="text-start text-2xl md:text-4xl lg:text-nowrap">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            National-Level Science Exhibition Qualifier (2022)
                         </h1>
                     </motion.div>
                 </li>
+                <li className="mb-4">
+                    <motion.div style={{overflow:"hidden"}} initial={{opacity:0,width:0}} animate={{opacity:1,width:"auto"}} transition={{duration:1, type:"tween", delay:4}} className="flex flex-row"> 
+                        <motion.div initial={{width:0,opacity:0}} animate={{opacity:1,width:"auto"}} transition={{duration:0.5,type:"spring",delay:5}}>
+                            <span className="text-4xl mr-4 text-start text-[var(--primary)]">&gt;</span>
+                        </motion.div>
+
+                        <h1 className="text-start text-2xl md:text-4xl lg:text-nowrap">
+                            Three-Time State-Level Science Exhibition Finalist
+                        </h1>
+                    </motion.div>
+                </li>
+
+
+                <li className="mb-4">
+                    <motion.div style={{overflow:"hidden"}} initial={{opacity:0,width:0}} animate={{opacity:1,width:"auto"}} transition={{duration:1, type:"tween", delay:5}} className="flex flex-row"> 
+                        <h1 className="mt-4 text-start text-2xl md:text-4xl text-[var(--fg2)] lg:text-nowrap">
+                            And... A lot more yet to accomplish!
+                        </h1>
+                    </motion.div>
+                </li>
+
             </ol> 
 
 

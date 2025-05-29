@@ -38,7 +38,7 @@ function Skills(){
     },[]);
 
     return(
-        <div className="flex items-center justify-center w-full h-full mt-28">
+        <div className="flex items-center justify-center w-full h-full my-28">
             <div className="w-[90%] h-full flex-col grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="flex flex-col items-center rounded-xl p-12 justify-center border-3 border-[var(--bg3)]"
                 style={{backgroundImage:"linear-gradient(120deg,var(--bg2) 10%,var(--bg) 100%)"}}>
@@ -114,7 +114,7 @@ function Skills(){
                         {
                             skillsData? (
                                 skillsData?.frameworks.map((f:SkillType)=>(
-                                    <li key={f.id} className="flex flex-col items-center justify-center">
+                                    <li key={f.id} className="flex flex-col items-center justify-center mt-4">
                                         <div className="flex flex-row items-center justify-center">
                                             <Image src={f.img} alt={f.title} height={30} width={30}/>
                                             <p className="m-4 text-center text-[var(--fg2)] text-lg">{f.title}</p>

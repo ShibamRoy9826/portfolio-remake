@@ -14,6 +14,14 @@
             "img":"/lang/cpp.png",
             "title":"C++",
             "progress":30,
+            "currLearn":false
+        },
+
+        {
+            "id":"1b",
+            "img":"/lang/ts.png",
+            "title":"Ts/Js",
+            "progress":50,
             "currLearn":true
         }
 
@@ -53,7 +61,7 @@
             "id":"3b",
             "img":"/tech/django.jpeg",
             "title":"Django",
-            "progress":70,
+            "progress":50,
             "currLearn":false
         },
         {
@@ -67,9 +75,82 @@
             "id":"3d",
             "img":"/tech/linux.png",
             "title":"Linux(Arch btw)",
-            "progress":90,
+            "progress":80,
+            "currLearn":false
+        },
+        {
+            "id":"3e",
+            "img":"/tech/numpy.png",
+            "title":"Numpy",
+            "progress":10,
+            "currLearn":true
+        },
+        {
+            "id":"3f",
+            "img":"/tech/react.png",
+            "title":"React",
+            "progress":60,
+            "currLearn":true
+        },
+
+        {
+            "id":"3g",
+            "img":"/tech/vim.png",
+            "title":"Vim/Nvim",
+            "progress":60,
+            "currLearn":false
+        },
+
+        {
+            "id":"3h",
+            "img":"/tech/tailwindcss.png",
+            "title":"Tailwind CSS",
+            "progress":100,
+            "currLearn":false
+        },
+
+        {
+            "id":"3i",
+            "img":"/tech/html.png",
+            "title":"HTML",
+            "progress":100,
+            "currLearn":false
+        },
+
+        {
+            "id":"3j",
+            "img":"/tech/css.png",
+            "title":"CSS",
+            "progress":100,
+            "currLearn":false
+        },
+
+
+        {
+            "id":"3k",
+            "img":"/tech/kicad.png",
+            "title":"KiCad",
+            "progress":60,
+            "currLearn":false
+        },
+
+        {
+            "id":"3l",
+            "img":"/tech/kicad.png",
+            "title":"KiCad",
+            "progress":60,
+            "currLearn":false
+        },
+
+        {
+            "id":"3m",
+            "img":"/tech/onshape.png",
+            "title":"OnShape",
+            "progress":60,
             "currLearn":false
         }
+
+
 
     ]
 }

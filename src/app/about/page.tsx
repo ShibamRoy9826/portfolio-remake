@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 const currYear = new Date().getFullYear();
 
-const intro=`Hi! I am $Shibam $Roy, an ${currYear - 2007} year old programmer, with a keen interest in $Data $Science. I enjoy $web $development, and tinkering with $electronics too! # Apart from programming, I live a normal life, having fun with family, studying, listening to music and occasionally watching Anime. # If you ever meet me in person, you'd would probably realize I am the most introverted person you've met, I find it hard to communicate with people in real life 😅 # Still, I love to $contribute $to $open $source , and $make $my $own $open $source $projects! I am just at the beginnning of my programming journey, and have a long way to go, Wish me luck! # Thanks for being interested and reading this, Not many people do, and I really appreciate it. 💖`;
+const intro=`Hi! I am $Shibam $Roy, an ${currYear - 2007} year old programmer, with a keen interest in $Data $Science. I enjoy $web $development, and tinkering with $electronics too! # Apart from programming, I live a normal life, having fun with family, studying, listening to music and occasionally watching Anime. # If you ever meet me in person, you'd probably realize I am the most introverted person you've met, I find it hard to communicate with people in real life 😅 # Still, I love to $contribute $to $open $source , and $make $my $own $open $source $projects! I am just at the beginnning of my programming journey, and have a long way to go, Wish me luck! # Thanks for being interested and reading this, Not many people do, and I really appreciate it. 💖`;
 
 const words=intro.split(" ");
 console.log(words);
@@ -27,7 +27,7 @@ function About() {
                width={window.innerWidth>768?"20rem":"16rem"}
                height={window.innerWidth>768?"26rem":"20rem"}
                innerStuff={
-                 <Image src="/mypfp.png" alt="My pfp" style={{ borderRadius: "1rem" }} fill />
+                 <Image src="/pfp.png" alt="My pfp" style={{ borderRadius: "1rem" }} fill />
                }
                className="shadowBox"
             
@@ -37,9 +37,9 @@ function About() {
                width="20rem"
                height="26rem"
                innerStuff={
-                 <Image src="/mypfp.png" alt="My pfp" style={{ borderRadius: "1rem" }} fill />
+                 <Image src="/pfp.png" alt="My pfp" style={{ borderRadius: "1rem", objectFit:"cover"}} fill />
                }
-               className="shadowBox"
+               className={`shadowBox ${style.pfp}`}
              
                angle={10}/>
          }

@@ -11,12 +11,15 @@
   "dependencies": {
     "@pixi/graphics": "^7.4.3",
     "@pixi/react": "^8.0.2",
+    "@react-three/fiber": "^9.1.2",
+    "@types/three": "^0.176.0",
     "framer-motion": "^12.10.5",
     "motion": "^12.10.5",
     "next": "15.3.2",
     "pixi.js": "^8.9.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "three": "^0.176.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
