@@ -4,9 +4,8 @@
 }
 
 .pfp{
-    transition: 0.5s all ease;
+    transition: 0.5s border-color ease; 
     border: 2px solid var(--fg3); 
-    object-fit: cover;
 }
 
 .pfp:hover{

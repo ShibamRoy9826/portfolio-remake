@@ -47,7 +47,9 @@ const Component3D: React.FC<Props>=({innerStuff,width,height,angle,className})=>
             transformStyle:"preserve-3d",
             width:width,
             height:height,
-            borderRadius:"1rem"
+            borderRadius:"1rem",
+            overflow:"hidden",
+            position:"relative"
         }} className={className}>
             {innerStuff}
         </motion.div>
