@@ -26,7 +26,7 @@ function About() {
                width={window.innerWidth>768?"20rem":"16rem"}
                height={window.innerWidth>768?"26rem":"20rem"}
                innerStuff={
-                 <Image src="/pfp.png" alt="My pfp" style={{ borderRadius: "1rem", objectFit:"cover" }} fill unoptimized/>
+                 <Image src="/pfp.webp" alt="My pfp" style={{ borderRadius: "1rem", objectFit:"cover" }} fill unoptimized/>
                }
                className={`shadowBox ${style.pfp}`}
             
@@ -36,7 +36,7 @@ function About() {
                width="20rem"
                height="26rem"
                innerStuff={
-                 <Image src="/pfp.png" alt="My pfp" style={{ borderRadius: "1rem", objectFit:"cover"}} fill unoptimized/>
+                 <Image src="/pfp.webp" alt="My pfp" style={{ borderRadius: "1rem", objectFit:"cover"}} fill unoptimized/>
 
                }
                className={`shadowBox ${style.pfp}`}
