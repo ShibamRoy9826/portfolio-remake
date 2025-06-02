@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 import {MusicContextProvider} from "@/contexts/musicContext";
 import { inconsolata } from "./fonts";
-// import  Bg from "@/components/bg";
+import Bg from "@/components/bg";
 
 // components
 import NavBar from "@/components/navbar";
@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={inconsolata.className}
       >
-        {/* <Bg/> */}
+        <Bg/>
         {/* <video
           autoPlay
           muted
