@@ -46,8 +46,8 @@ function Skills(){
                     <ul className="p-4">
                         {
                             skillsData?(
-                                skillsData?.langs.map((l:SkillType)=>(
-                                    <li key={l.id} className="flex flex-col items-center justify-center">
+                                skillsData?.langs.map((l:SkillType,i:number)=>(
+                                    <li key={i} className="flex flex-col items-center justify-center">
                                         <div className="flex flex-row items-center justify-center">
                                             <Image src={l.img} alt={l.title} height={30} width={30}/>
                                             <p className="flex items-center justify-center m-4  text-center text-[var(--fg2)] text-lg">{l.title}
@@ -79,8 +79,8 @@ function Skills(){
                     <ul>
                         {
                             skillsData?(
-                                skillsData?.fields.map((f:SkillType)=>(
-                                    <li key={f.id} className="flex flex-col items-center justify-center">
+                                skillsData?.fields.map((f:SkillType,i:number)=>(
+                                    <li key={i} className="flex flex-col items-center justify-center">
                                         <div className="flex flex-row items-center justify-center">
                                             <Image src={f.img} alt={f.title} height={40} width={40}/>
                                             <p className="m-4 text-center text-[var(--fg2)] text-lg">{f.title}</p>
@@ -113,8 +113,8 @@ function Skills(){
                     <ul className="w-full grid grid-cols-1 md:grid-cols-5">
                         {
                             skillsData? (
-                                skillsData?.frameworks.map((f:SkillType)=>(
-                                    <li key={f.id} className="flex flex-col items-center justify-center mt-4">
+                                skillsData?.frameworks.map((f:SkillType,i:number)=>(
+                                    <li key={i} className="flex flex-col items-center justify-center mt-4">
                                         <div className="flex flex-row items-center justify-center">
                                             <Image src={f.img} alt={f.title} height={30} width={30}/>
                                             <p className="m-4 text-center text-[var(--fg2)] text-lg">{f.title}</p>

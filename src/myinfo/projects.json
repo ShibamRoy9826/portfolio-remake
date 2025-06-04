@@ -1,6 +1,5 @@
 [
     {
-        "id":1,
         "name":"EasyFeh",
         "desc":"A wallpaper engine wrapper for linux",
         "repo":"https://github.com/ShibamRoy9826/easyfeh",
@@ -9,7 +8,6 @@
     },
 
     {
-        "id":2,
         "name":"TweakTube",
         "desc":"Helps you to customize youtube",
         "repo":"https://github.com/ShibamRoy9826/tweaktube",
@@ -18,7 +16,6 @@
     },
 
     {
-        "id":3,
         "name":"QT_Tile",
         "desc":"A beautiful Qtile rice with installer(for arch)",
         "repo":"https://github.com/ShibamRoy9826/qt_tile",
@@ -27,7 +24,6 @@
     },
 
     {
-        "id":4,
         "name":"Remime",
         "desc":"A TUI clock made with Textual",
         "repo":"https://github.com/ShibamRoy9826/remime",
@@ -35,7 +31,6 @@
         "imgSrc":"/projects/remime.png"
     },
     {
-        "id":5,
         "name":"RoyBoard",
         "desc":"A keyboard entirely that I made from scratch!",
         "repo":"https://github.com/ShibamRoy9826/royboard",
@@ -43,7 +38,6 @@
         "imgSrc":"/test.jpeg"
     },
     {
-        "id":6,
         "name":"RoyTyper",
         "desc":"A macropad made from scratch",
         "repo":"https://github.com/ShibamRoy9826/roytyper",
@@ -51,7 +45,6 @@
         "imgSrc":"/projects/royTyper.jpeg"
     },
     {
-        "id":7,
         "name":"EcoSight",
         "desc":"A website to make you aware about your contribution to pollution",
         "repo":"https://github.com/ShibamRoy9826/EcoSight-Geek-a-thon-project",
@@ -60,7 +53,6 @@
     },
     
     {
-        "id":8,
         "name":"SantaPlace",
         "desc":"A website about christmas, made for an event called Boba drops by Hackclub",
         "repo":"https://github.com/ShibamRoy9826/SantaPlace",
@@ -69,7 +61,6 @@
     },
 
     {
-        "id":9,
         "name":"KawaiiPet",
         "desc":"A simple pet simulator game, my first proper game ever",
         "repo":"https://github.com/ShibamRoy9826/KawaiiPet",
@@ -77,7 +68,6 @@
         "imgSrc":"/projects/KawaiiPet.png"
     },
     {
-        "id":10,
         "name":"Conversafe",
         "desc":"A FOSS language learning platform!",
         "repo":"https://github.com/ShibamRoy9826/Conversafe",

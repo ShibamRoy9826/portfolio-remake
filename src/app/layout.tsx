@@ -43,13 +43,13 @@ export default function RootLayout({
         <CustomCursor/>
         
           <MusicContextProvider>
-            <AudioViz/>
 
             <main className="flex flex-col items-center justify-center lg:items-start lg:justify-start w-full h-auto lg:h-full">
               <Progress/>
               <PageWrapper>{children}</PageWrapper>
               <NavBar/>
             </main>
+            <AudioViz/>
 
           </MusicContextProvider>
         

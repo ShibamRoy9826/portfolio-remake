@@ -2,7 +2,6 @@
 {
     "langs":[
         {
-            "id":"1a",
             "img":"/lang/python.png",
             "title":"Python",
             "progress":90,
@@ -10,7 +9,6 @@
         },
 
         {
-            "id":"1b",
             "img":"/lang/cpp.png",
             "title":"C++",
             "progress":30,
@@ -18,7 +16,6 @@
         },
 
         {
-            "id":"1b",
             "img":"/lang/ts.png",
             "title":"Ts/Js",
             "progress":50,
@@ -28,21 +25,18 @@
     ],
     "fields":[
         {
-            "id":"2a",
             "img":"/fields/webdev.png",
             "title":"Web development",
             "progress":60,
             "currLearn":false
         },
         {
-            "id":"2b",
             "img":"/fields/datascience.png",
             "title":"Data Science",
             "progress":10,
             "currLearn":true
         },
         {
-            "id":"2c",
             "img":"/fields/hardware.png",
             "title":"Electronics",
             "progress":30,
@@ -51,42 +45,36 @@
     ],
     "frameworks":[
         {
-            "id":"3a",
             "img":"/tech/nextjs.svg",
             "title":"NextJS",
             "progress":60,
             "currLearn":true
         },
         {
-            "id":"3b",
             "img":"/tech/django.jpeg",
             "title":"Django",
             "progress":50,
             "currLearn":false
         },
         {
-            "id":"3c",
             "img":"/tech/git.png",
             "title":"Git",
             "progress":90,
             "currLearn":false
         },
         {
-            "id":"3d",
             "img":"/tech/linux.png",
             "title":"Linux(Arch btw)",
             "progress":80,
             "currLearn":false
         },
         {
-            "id":"3e",
             "img":"/tech/numpy.png",
             "title":"Numpy",
             "progress":10,
             "currLearn":true
         },
         {
-            "id":"3f",
             "img":"/tech/react.png",
             "title":"React",
             "progress":60,
@@ -94,7 +82,6 @@
         },
 
         {
-            "id":"3g",
             "img":"/tech/vim.png",
             "title":"Vim/Nvim",
             "progress":60,
@@ -102,7 +89,6 @@
         },
 
         {
-            "id":"3h",
             "img":"/tech/tailwindcss.png",
             "title":"Tailwind CSS",
             "progress":100,
@@ -110,7 +96,6 @@
         },
 
         {
-            "id":"3i",
             "img":"/tech/html.png",
             "title":"HTML",
             "progress":100,
@@ -118,7 +103,6 @@
         },
 
         {
-            "id":"3j",
             "img":"/tech/css.png",
             "title":"CSS",
             "progress":100,
@@ -127,7 +111,6 @@
 
 
         {
-            "id":"3k",
             "img":"/tech/kicad.png",
             "title":"KiCad",
             "progress":60,
@@ -135,7 +118,6 @@
         },
 
         {
-            "id":"3l",
             "img":"/tech/kicad.png",
             "title":"KiCad",
             "progress":60,
@@ -143,7 +125,6 @@
         },
 
         {
-            "id":"3m",
             "img":"/tech/onshape.png",
             "title":"OnShape",
             "progress":60,

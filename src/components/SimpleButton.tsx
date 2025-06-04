@@ -3,9 +3,9 @@ import React from "react";
 
 interface SimpleProps{
   text:string;
-  className:string;
-  url:string;
-  sameTab:boolean;
+  className?:string;
+  url?:string;
+  sameTab?:boolean;
   svg?:React.ReactNode;
 }
 const SimpleButton:React.FC<SimpleProps>=({text,className,sameTab,url,svg})=>{
