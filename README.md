@@ -18,8 +18,9 @@ Its live [here](https://shibamroy.vercel.app/).Please check it out!
 >[!NOTE]
 >Please visit the website for much more details! there are a lot of things other than whatever you can see in these screenshots
 
-![screenshots/01.png]
-![screenshots/02.png]
+![img1](screenshots/01.png)
+
+![img2](screenshots/02.png)
 
 ## Known bugs 🐞
 
