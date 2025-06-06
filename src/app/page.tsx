@@ -17,7 +17,7 @@ export default function Home() {
     <>
     
     <section className="w-[100vw] h-[100vh] flex flex-col items-center justify-center">
-      <div className="flex flex-col px-8 items-center justify-center w-full h-auto lg:relative lg:bottom-16"
+      <div className="flex flex-col px-8 items-center justify-center w-full h-auto mt-24 lg:relative lg:bottom-16"
           onMouseEnter={()=>setHover(true)}
           onMouseLeave={()=>setHover(false)}
       
@@ -43,7 +43,7 @@ export default function Home() {
           </p>
 
           <motion.div
-          className="text-3xl lg:text-5xl text-center mt-8 textCursor text-[var(--fg2)]"
+          className="text-2xl lg:text-5xl text-center mt-8 textCursor text-[var(--fg2)]"
           initial={{y:-50,opacity:0}}
           animate={{opacity:1,y:0}}
           transition={{duration:1,delay:0.3,type:"spring"}}
@@ -153,7 +153,7 @@ export default function Home() {
         textAlign: "center",
       }}
       >
-            <form action="https://formspree.io/f/xkgbggbj" method="POST" className="flex flex-col items-center w-auto mx-6 md:mx-12 lg:mx-24 mt-8 mb-16 rounded-2xl p-6 shadow-xl lg:p-12  border-3 border-[var(--bg3)]" style={{backgroundImage:"linear-gradient(120deg,var(--bg2) 10%,var(--bg) 100%)",boxShadow:"20px 10px 60px 20px #00000088"}}>
+            <form action="https://formspree.io/f/xkgbggbj" method="POST" className="flex flex-col items-center w-auto mx-0 md:mx-12 lg:mx-24 mt-8 mb-16 rounded-2xl p-6 shadow-xl lg:p-12  border-3 border-[var(--bg3)]" style={{backgroundImage:"linear-gradient(120deg,var(--bg2) 10%,var(--bg) 100%)",boxShadow:"20px 10px 60px 20px #00000088"}}>
                 <h1 className={`text-center w-full text-3xl lg:text-5xl mb-12 ${silkscreen.className}`}>Wanna Talk?
 
                     <motion.div
@@ -165,21 +165,21 @@ export default function Home() {
                       bottom:"5vh"
                     }}
                     >
-                        <span className={`mx-4 text-center text-[var(--fg2)] text-sm ${silkscreen.className}`}>I DO NOT BITE</span>
+                        <span className={`mx-4 relative top-8 right-8 md:right-0 md:top-0 text-center text-[var(--fg2)] text-sm ${silkscreen.className}`}>I DO NOT BITE</span>
                     </motion.div>
                 </h1>
 
-                <div className="grid grid-cols-4 gap-8 relative w-full h-full">
-                  <label className="text-2xl text-[var(--fg)] text-center">Your Email:</label>
-                  <input type="email" name="email" className="focus:border-[var(--primary)] hover:border-[var(--fg3)] outline-none transition-all ease duration-500 text-center col-span-3 text-2xl border-3 border-[var(--bg3)] rounded-xl px-4 py-2" placeholder="iamsomeone@ohio.com(a real one please...)" required/>
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative w-full h-full">
+                  <label className="text-xl md:text-2xl text-[var(--fg)] md:text-center">Your Email:</label>
+                  <input type="email" name="email" className="focus:border-[var(--primary)] hover:border-[var(--fg3)] outline-none transition-all ease duration-500 md:text-center text-xl md:col-span-3 md:text-2xl border-3 border-[var(--bg3)] rounded-xl px-4 py-2" placeholder="iamsomeone@ohio.com(a real one please...)" required/>
 
 
-                  <label className="text-2xl text-[var(--fg)] text-center">Your Name:</label>
-                  <input type="text" name="name" className="focus:border-[var(--primary)] hover:border-[var(--fg3)] outline-none transition-all ease duration-500 text-center col-span-3 text-2xl border-3 border-[var(--bg3)] rounded-xl px-4 py-2" placeholder="Fake names work... ig" required/>
+                  <label className="text-xl md:text-2xl text-[var(--fg)] text-center">Your Name:</label>
+                  <input type="text" name="name" className="focus:border-[var(--primary)] hover:border-[var(--fg3)] outline-none transition-all ease duration-500 text-center md:text-center text-xl md:col-span-3 md:text-2xl border-3 border-[var(--bg3)] rounded-xl px-4 py-2" placeholder="Fake names work... ig" required/>
 
 
-                  <label className="text-2xl text-[var(--fg)] text-center">Your Message:</label>
-                  <textarea name="message" className="focus:border-[var(--primary)] hover:border-[var(--fg3)] outline-none transition-all ease duration-500 col-span-3 text-2xl border-3 border-[var(--bg3)] rounded-xl px-4 py-2" placeholder="Fill this message box with your message please, currently its emptier than my head..." required/>
+                  <label className="text-xl md:text-2xl text-[var(--fg)] text-center">Your Message:</label>
+                  <textarea name="message" className="focus:border-[var(--primary)] hover:border-[var(--fg3)] outline-none transition-all ease duration-500 md:text-center text-xl row-span-4 md:row-span-1 md:col-span-3 border-3 border-[var(--bg3)] rounded-xl px-4 py-2" placeholder="Fill this message box with your message please, currently its emptier than my head..." required/>
 
                 </div>
                 <button type="submit" className={`rounded-lg w-auto ${silkscreen.className} bg-[var(--primary)] py-4 px-16 my-8 hover:text-[var(--bg)] hover:bg-[var(--primary-darker)] transition-all duration-500 ease`}>
@@ -198,7 +198,7 @@ export default function Home() {
     exit={{opacity:0,rotateX:-90}}
     viewport={{ once: false, amount: 0.3 }}
     transition={{type:'spring'}}
-     className="bg-[var(--bg)] h-[5vh] md:h-[10vh] w-full flex items-center justify-center">
+     className="bg-[var(--bg)] py-4 w-full flex items-center justify-center">
       <h1>© 2025 Copyright | By Shibam Roy</h1>
 
     </motion.footer>

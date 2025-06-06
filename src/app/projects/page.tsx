@@ -34,7 +34,7 @@ function Projects(){
             console.log(projectData);
         }
         getProjects();
-    },[]);
+    });
         
        
     return(
@@ -56,7 +56,7 @@ function Projects(){
 
                         <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-8 h-[80vh] md:h-[70vh] w-full md:col-span-5"
                          initial={{opacity:1}} animate={{opacity:[0,1,0]}} transition={{duration:1,repeat:Infinity,repeatType:"loop"}}>
-                            {[...Array(15)].map((_,i)=>(
+                            {[...Array(10)].map((_,i)=>(
                                 <div key={i} style={{backgroundColor:"var(--bg2)"}} className="rounded-xl p-24">
                                     <p className="text-center text-[var(--fg2)]"><i>Loading...</i></p>
                                 </div>

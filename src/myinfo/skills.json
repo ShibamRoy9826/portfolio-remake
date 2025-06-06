@@ -117,12 +117,6 @@
             "currLearn":false
         },
 
-        {
-            "img":"/tech/kicad.png",
-            "title":"KiCad",
-            "progress":60,
-            "currLearn":false
-        },
 
         {
             "img":"/tech/onshape.png",

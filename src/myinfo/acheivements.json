@@ -2,18 +2,6 @@
     "gallery":[
 
         {
-            "img":"ISRO-newspaper.jpeg",
-            "title":"I am famous! (local newspaper)"
-        },
-        {
-            "img":"ISRO-scert.jpeg",
-            "title":"At SCERT before going to ISRO"
-        },
-        {
-            "img":"ISRO-in-flight.jpeg",
-            "title":"Inside of flight while going to ISRO"
-        },
-        {
             "img":"ISRO-group-photo-1.jpeg",
             "title":"Group photo inside URRAO satellite center, ISRO"
         },
@@ -22,8 +10,20 @@
             "title":"ISRO URRAO Satellite center"
         },
         {
+            "img":"ISRO-in-flight.jpeg",
+            "title":"Inside of flight while going to ISRO"
+        },
+        {
             "img":"ISRO-hotel.jpeg",
             "title":"while returning from Bengaluru, at hotel"
+        },
+        {
+            "img":"ISRO-newspaper.jpeg",
+            "title":"I am famous! (local newspaper)"
+        },
+        {
+            "img":"ISRO-scert.jpeg",
+            "title":"At SCERT before going to ISRO"
         }
 
     ],

@@ -4,6 +4,7 @@ import {motion} from "framer-motion";
 import {silkscreen} from "../fonts";
 import Image from "next/image";
 import {useState,useEffect} from 'react';
+import AcCard from "@/components/acCard";
 
 
 async function fetchAcheivements(){
@@ -36,7 +37,7 @@ function Acheivements(){
             console.log(ac);
         }
         getAc();
-    },[]);
+    });
 
     return(
         <div className="flex flex-col justify-center w-full h-full my-28" >
@@ -47,7 +48,7 @@ function Acheivements(){
                         <motion.div initial={{width:0,opacity:0}} animate={{opacity:1,width:"auto"}} transition={{duration:0.5,type:"spring",delay:1}}>
                             <span className="text-4xl mr-4 text-start text-[var(--primary)]">&gt;</span>
                         </motion.div>
-                        <h1 className="text-start text-2xl md:text-4xl lg:text-nowrap">
+                        <h1 className="text-start text-xl md:text-4xl lg:text-nowrap">
                             Selected to visit ISRO Headquarters, Bengaluru(2025).
                         </h1>
                     </motion.div>
@@ -57,7 +58,7 @@ function Acheivements(){
                         <motion.div initial={{width:0,opacity:0}} animate={{opacity:1,width:"auto"}} transition={{duration:0.5,type:"spring",delay:2}}>
                             <span className="text-4xl mr-4 text-start text-[var(--primary)]">&gt;</span>
                         </motion.div>
-                        <h1 className="text-start text-2xl md:text-4xl lg:text-nowrap">
+                        <h1 className="text-start text-xl md:text-4xl lg:text-nowrap">
                             Selected for SSHP 2025, Japan.
                         </h1>
                     </motion.div>
@@ -68,7 +69,7 @@ function Acheivements(){
                         <motion.div initial={{width:0,opacity:0}} animate={{opacity:1,width:"auto"}} transition={{duration:0.5,type:"spring",delay:3}}>
                             <span className="text-4xl mr-4 text-start text-[var(--primary)]">&gt;</span>
                         </motion.div>
-                        <h1 className="text-start text-2xl md:text-4xl lg:text-nowrap">
+                        <h1 className="text-start text-xl md:text-4xl lg:text-nowrap">
                             Hackathon Winner at 16.
                         </h1>
                     </motion.div>
@@ -79,7 +80,7 @@ function Acheivements(){
 
                             <span className="text-4xl mr-4 text-start text-[var(--primary)]">&gt;</span>
                         </motion.div>
-                        <h1 className="text-start text-2xl md:text-4xl lg:text-nowrap">
+                        <h1 className="text-start text-xl md:text-4xl lg:text-nowrap">
                             National-Level Science Exhibition Qualifier (2022)
                         </h1>
                     </motion.div>
@@ -90,7 +91,7 @@ function Acheivements(){
                             <span className="text-4xl mr-4 text-start text-[var(--primary)]">&gt;</span>
                         </motion.div>
 
-                        <h1 className="text-start text-2xl md:text-4xl lg:text-nowrap">
+                        <h1 className="text-start text-xl md:text-4xl lg:text-nowrap">
                             Three-Time State-Level Science Exhibition Finalist
                         </h1>
                     </motion.div>
@@ -115,9 +116,16 @@ function Acheivements(){
                     {
                         ac?(
                             ac?.gallery.map((l:Acheivements,i:number)=>(
-                                <motion.div key={i} className="rounded-xl relative w-full overflow-hidden h-[40vh] border-3 border-[var(--bg3)]" whileHover={{scale:1.1,borderColor:"var(--primary)"}} >
-                                    <Image alt="A nice memory" src={"/gallery/"+l.img}  layout="fill" objectFit="cover"/>
-                                </motion.div>
+                                <AcCard
+                                key={i}
+                                imgSrc={"/gallery/"+l.img}
+                                altName={"A nice memory..."}
+                                />
+
+                                // <motion.div key={i} className="rounded-xl relative w-full overflow-hidden h-[40vh] border-3 border-[var(--bg3)]" whileHover={{scale:1.1,borderColor:"var(--primary)"}} >
+                                //     <Image alt="A nice memory" src={"/gallery/"+l.img}  layout="fill" objectFit="cover"/>
+                                // </motion.div>
+
                             ))
                         ):
 
@@ -140,9 +148,11 @@ function Acheivements(){
                     {
                         ac?(
                             ac?.cert.map((l:Acheivements,i:number)=>(
-                                <motion.div key={i} className="rounded-xl relative w-full overflow-hidden h-[40vh] border-3 border-[var(--bg3)]" whileHover={{scale:1.1,borderColor:"var(--primary)"}} >
-                                    <Image alt="Something to be proud of:)" src={"/cert/"+l.img}  layout="fill" objectFit="cover"/>
-                                </motion.div>
+                                <AcCard
+                                key={i}
+                                imgSrc={"/cert/"+l.img}
+                                altName="Something to be proud of:)"
+                                />
                             ))
                         ):
 

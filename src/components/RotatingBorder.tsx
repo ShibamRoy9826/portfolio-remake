@@ -22,7 +22,7 @@ const RotatingBorder:React.FC<Props>=({innerStuff,duration,className})=>{
         repeatType:"loop"
         })
         return ()=>controls.stop();
-    },[angle]);
+    },[angle,duration]);
 
     const gradientColor=useTransform(
         angle,

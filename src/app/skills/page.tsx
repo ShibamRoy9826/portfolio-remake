@@ -35,7 +35,7 @@ function Skills(){
             console.log(skillsData);
         }
         getSkills();
-    },[]);
+    });
 
     return(
         <div className="flex items-center justify-center w-full h-full my-28">
