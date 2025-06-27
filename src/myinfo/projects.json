@@ -33,9 +33,9 @@
     {
         "name":"RoyBoard",
         "desc":"A keyboard entirely that I made from scratch!",
-        "repo":"https://github.com/ShibamRoy9826/royboard",
-        "demo":"https://github.com/ShibamRoy9826/royboard",
-        "imgSrc":"/test.jpeg"
+        "repo":"https://github.com/ShibamRoy9826/RoyBoard",
+        "demo":"https://github.com/ShibamRoy9826/RoyBoard",
+        "imgSrc":"/projects/RoyBoard.png"
     },
     {
         "name":"RoyTyper",
