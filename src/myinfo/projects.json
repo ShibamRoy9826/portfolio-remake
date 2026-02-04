@@ -6,6 +6,20 @@
         "demo":"https://cloud-3q71ag430-hack-club-bot.vercel.app/0easyfeh.mp4",
         "imgSrc":"/projects/easyfeh.png"
     },
+    {
+        "name":"HackNet",
+        "desc":"A social media for hackclubbers!",
+        "repo":"https://github.com/ShibamRoy9826/HackNet",
+        "demo":"https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/06218d408f645bc043eb8a445c999f2c8f5b52d0_hacknetdemo.mp4",
+        "imgSrc":"/projects/hacknet.jpeg"
+    },
+    {
+        "name":"Mizuha",
+        "desc":"A new tab page integrated with lofi-music player!",
+        "repo":"https://github.com/ShibamRoy9826/Mizuha",
+        "demo":"https://mizuha.vercel.app/",
+        "imgSrc":"/projects/mizuha.png"
+    },
 
     {
         "name":"TweakTube",
@@ -13,14 +27,6 @@
         "repo":"https://github.com/ShibamRoy9826/tweaktube",
         "demo":"https://chromewebstore.google.com/detail/ffcagalbokfdgenaiphoednjmjnjjflj?utm_source=item-share-cb",
         "imgSrc":"/projects/tweaktube.png"
-    },
-
-    {
-        "name":"QT_Tile",
-        "desc":"A beautiful Qtile rice with installer(for arch)",
-        "repo":"https://github.com/ShibamRoy9826/qt_tile",
-        "demo":"https://cloud-7t3z6wj50-hack-club-bot.vercel.app/0inshot_20241216_102136759.mp4",
-        "imgSrc":"/projects/qt_tile.png"
     },
 
     {
@@ -62,14 +68,14 @@
 
     {
         "name":"KawaiiPet",
-        "desc":"A simple pet simulator game, my first proper game ever",
+        "desc":"A simple pet simulator game, my first game ever",
         "repo":"https://github.com/ShibamRoy9826/KawaiiPet",
         "demo":"https://cloud-fgf2azwgd-hack-club-bot.vercel.app/0kawaiipet_demo.mp4",
         "imgSrc":"/projects/KawaiiPet.png"
     },
     {
         "name":"Conversafe",
-        "desc":"A FOSS language learning platform!",
+        "desc":"A FOSS language learning platform! To be re-made in svelte soon...",
         "repo":"https://github.com/ShibamRoy9826/Conversafe",
         "demo":"",
         "imgSrc":"/projects/conversafe.png"
