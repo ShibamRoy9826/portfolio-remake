@@ -31,7 +31,7 @@ const AcCard:React.FC<Props>=({imgSrc,altName})=>{
             <div className="relative w-full h-full" style={{
                 borderBottom:"2px solid var(--fg3)"
             }}>
-            <Image src={imgSrc} alt={altName} layout="fill" objectFit="cover"/>
+            <Image src={imgSrc} alt={altName} layout="fill" objectFit="stretch"/>
             </div>
         </motion.div>
     );

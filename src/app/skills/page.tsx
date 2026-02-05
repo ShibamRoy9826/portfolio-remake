@@ -41,7 +41,7 @@ function Skills(){
                 <div className="flex flex-col items-center rounded-xl p-12 justify-center border-3 border-[var(--bg3)]"
                 style={{backgroundImage:"linear-gradient(120deg,var(--bg2) 10%,var(--bg) 100%)"}}>
                     <h1 className={`${silkscreen.className} text-center text-2xl mb-4`}>Current Skillset</h1>
-                    <ul className="p-4 grid grid-cols-8">
+                    <ul className="p-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7">
                         {
                             skillsData?(
                                 skillsData?.stack.map((l:SkillType,i:number)=>(

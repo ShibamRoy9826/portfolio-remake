@@ -11,6 +11,24 @@
 .pfp:hover{
     border: 2px solid var(--primary); 
 }
+.showMore{
+    display:flex;
+    color: var(--fg3);
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    width:8rem;
+    border-radius:1rem;
+    background-color:var(--primary);
+    padding:1rem;
+    margin-top:2rem;
+    transition: all 0.6s ease-in-out;
+    box-shadow: 0 0 30px 10px #00000088;
+}
+
+.showMore:hover{
+    box-shadow:0 15px 30px 10px #ae6dff44;
+}
 
 .github{
     display:flex;
@@ -20,10 +38,7 @@
     width:auto;
     border-radius:1rem;
     background-color:var(--primary);
-    padding-left:1rem;
-    padding-right:1rem;
-    padding-top:1rem;
-    padding-bottom:1rem;
+    padding:1rem;
     transition: all 0.6s ease-in-out;
     box-shadow: 0 0 30px 10px #00000088;
 }
