@@ -70,7 +70,7 @@ function About() {
                               animate={{x:0,y:0,rotate:0,opacity:1}}
                               transition={{
                                 type:"spring",
-                                stiffnesss:500,
+                                stiffness:500,
                                 damping:30,
                                 delay:Math.random()*0.9
                               }}
@@ -85,7 +85,7 @@ function About() {
                               animate={{x:0,y:0,rotate:0,opacity:1}}
                               transition={{
                                 type:"spring",
-                                stiffnesss:500,
+                                stiffness:500,
                                 damping:30,
                                 delay:Math.random()*0.9
                               }}
