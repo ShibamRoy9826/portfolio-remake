@@ -9,14 +9,11 @@ import { motion } from "framer-motion";
 
 const currYear = new Date().getFullYear();
 
-const intro = `Hi! I am $Shibam $Roy, an ${currYear - 2007} year old guy who loves programming. I enjoy $web $development, and tinkering with $electronics ! # Apart from programming, I live a fun with family, studying, listening to music and occasionally watching Anime. # Still, I love the idea of open source projects, and so I keep most of my projects open source. I am just at the beginnning of my programming journey, trying out new things, in fact I love exploring new fields, I will be honest, I feel like I am not really particularly good at anything, but I am trying my best to improve # and... uuh... Hey you can send me a message through that form in the home page, # I don't bite :) (or do I? :vsauce )`;
+const intro = `Hi! I am $Shibam $Roy, an ${currYear - 2007} year old guy who loves programming and tinkering with tech. I particularly enjoy $web $development, and experimenting with $electronics! # Apart from programming, I live a normal life, having fun with my family, studying, listening to music and occasionally watching Anime. # Not sure if its out of context, but I love the idea of open-source projects, which you can probably guess if you visit my github. I am just at the beginnning of my programming journey, trying out new things, in fact I love exploring new fields, I will be honest, I feel like I am not really particularly good at anything, but I am trying my best to improve # and... uuh... Hey you can send me a message through that form in the home page, # I don't bite :) (or do I? :vsauce )`;
 
 const words = intro.split(" ");
 
 function About() {
-
-
-
     return (
         <section className="flex flex-col md:flex-row items-center md:items-start lg:items-start justify-center mt-28 lg:mt-42">
             <div className="w-auto h-auto flex flex-col items-center justify-center md:mr-24">
